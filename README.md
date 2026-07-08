@@ -1,8 +1,10 @@
 # Mapa Interativo de Tipos de Solo
 
-**Autores:** Julie dos Santos Moura e Gabriel Renato Oliveira Camargo
-**Semestre de Defesa:** 2025-2
-[PDF do TCC](docs/tcc.pdf)
+**Autores:** Julie dos Santos Moura e Gabriel Renato Oliveira Camargo <br>
+**Semestre de Defesa:** 2026.1
+
+
+[PDF do TCC](static/TCC.pdf)
 
 ---
 
