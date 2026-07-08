@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Guia das Classes de Solo — Mapa de Solos</title>
+<style>
+  :root {
+    --bg: #f7f5f1;
+    --paper: #ffffff;
+    --ink: #1a1a2e;
+    --muted: #6b7280;
+    --accent: #a8521f;
+    --border: #e4ddd2;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.65;
+    font-size: 16px;
+  }
+  main {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 56px 32px 96px;
+    background: var(--paper);
+    box-shadow: 0 0 24px rgba(0,0,0,0.04);
+    min-height: 100vh;
+  }
+  h1 {
+    font-size: 34px;
+    line-height: 1.2;
+    margin: 0 0 8px;
+    letter-spacing: -0.5px;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 15px;
+    font-style: italic;
+    margin: 0 0 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+  h2 {
+    font-size: 24px;
+    margin: 48px 0 12px;
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 4px;
+  }
+  h3 {
+    font-size: 19px;
+    margin: 28px 0 6px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+  h3 .code {
+    display: inline-block;
+    font-size: 12px;
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+    font-weight: 600;
+    color: #fff;
+    padding: 3px 9px;
+    border-radius: 4px;
+    background: var(--accent);
+    letter-spacing: 0.5px;
+  }
+  p { margin: 8px 0; }
+  .meta {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 6px 14px;
+    margin: 10px 0 14px;
+    font-size: 14px;
+    background: #faf6ef;
+    border-left: 3px solid var(--accent);
+    padding: 10px 14px;
+  }
+  .meta dt {
+    font-weight: 600;
+    color: var(--muted);
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    padding-top: 3px;
+  }
+  .meta dd { margin: 0; }
+  nav.toc {
+    background: #faf6ef;
+    border: 1px solid var(--border);
+    padding: 18px 24px;
+    margin: 24px 0 32px;
+    border-radius: 6px;
+  }
+  nav.toc h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 12px;
+    color: var(--muted);
+    border: none;
+    padding: 0;
+  }
+  nav.toc ul {
+    margin: 0;
+    padding: 0 0 0 18px;
+    columns: 2;
+    column-gap: 28px;
+    font-size: 14px;
+  }
+  nav.toc li { margin-bottom: 4px; break-inside: avoid; }
+  nav.toc a { color: var(--ink); text-decoration: none; }
+  nav.toc a:hover { color: var(--accent); text-decoration: underline; }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--muted);
+  }
+  footer a { color: var(--accent); }
+
+  @media print {
+    body { background: #fff; font-size: 12pt; }
+    main { box-shadow: none; padding: 0 16mm; max-width: none; }
+    h2 { page-break-after: avoid; }
+    h3 { page-break-after: avoid; }
+    nav.toc { page-break-after: always; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Guia das Classes de Solo</h1>
+<p class="subtitle">
+  Material de apoio do projeto Mapa de Solos — Julie dos Santos Moura &amp; Gabriel Renato Oliveira Camargo.
+  Explica, em linguagem acessível, cada classe do Sistema Brasileiro de Classificação de Solos (SiBCS)
+  representada no mapa interativo.
+</p>
+
+<h2>O que é o SiBCS?</h2>
+<p>
+  O <strong>Sistema Brasileiro de Classificação de Solos</strong> é o sistema oficial usado pela Embrapa
+  Solos para classificar os solos do Brasil. Ele organiza os solos em níveis hierárquicos — sendo o
+  primeiro nível a <em>ordem</em> (ex.: Latossolo, Argissolo) e o segundo a <em>subordem</em>, que
+  geralmente descreve a cor, textura, regime de água ou saturação por bases. O nome completo de uma
+  classe junta esses níveis: por exemplo, <em>Latossolo Vermelho-Amarelo Distrófico</em> indica a ordem
+  (Latossolo), a cor (Vermelho-Amarelo) e a baixa saturação por bases (Distrófico, &lt; 50%).
+</p>
+<p>
+  Algumas siglas que aparecem com frequência na descrição dos solos:
+</p>
+<ul>
+  <li><strong>Distrófico:</strong> baixa saturação por bases (&lt; 50%) — solo pobre em nutrientes.</li>
+  <li><strong>Eutrófico:</strong> alta saturação por bases (≥ 50%) — solo mais fértil.</li>
+  <li><strong>Álico:</strong> alta saturação por alumínio — tóxico para muitas plantas.</li>
+  <li><strong>Órtico:</strong> caráter típico, sem propriedades extremas.</li>
+  <li><strong>Hidromórfico:</strong> sob influência de saturação por água.</li>
+</ul>
+
+<nav class="toc">
+  <h2>Índice</h2>
+  <ul>
+    <li><a href="#latossolos">Latossolos</a></li>
+    <li><a href="#argissolos">Argissolos</a></li>
+    <li><a href="#nitossolos">Nitossolos</a></li>
+    <li><a href="#cambissolos">Cambissolos</a></li>
+    <li><a href="#neossolos">Neossolos</a></li>
+    <li><a href="#gleissolos">Gleissolos</a></li>
+    <li><a href="#plintossolos">Plintossolos</a></li>
+    <li><a href="#espodossolos">Espodossolos</a></li>
+    <li><a href="#planossolos">Planossolos</a></li>
+    <li><a href="#luvissolos">Luvissolos</a></li>
+    <li><a href="#vertissolos">Vertissolos</a></li>
+    <li><a href="#chernossolos">Chernossolos</a></li>
+    <li><a href="#alissolos">Alissolos</a></li>
+    <li><a href="#organossolos">Organossolos</a></li>
+    <li><a href="#outros">Outras representações</a></li>
+  </ul>
+</nav>
+
+<!-- ============================ LATOSSOLOS ============================ -->
+<h2 id="latossolos">Latossolos</h2>
+<p>
+  Os Latossolos são solos <strong>profundos, bem drenados e muito intemperizados</strong> — ou seja,
+  passaram por longos processos químicos que removeram quase todos os minerais facilmente alteráveis,
+  restando principalmente óxidos de ferro e alumínio e argilominerais resistentes. Por isso são, em
+  geral, <strong>pobres em nutrientes</strong>, mas têm ótima estrutura física: friáveis, bem
+  estruturados em microagregados granulares e com excelente capacidade de armazenar água.
+</p>
+<p>
+  Ocupam cerca de <strong>um terço do território brasileiro</strong>, principalmente nos planaltos
+  centrais (Cerrado), e são os principais solos da agricultura mecanizada de grãos quando corrigidos
+  com calagem e adubação.
+</p>
+
+<h3><span class="code">LV</span> Latossolo Vermelho</h3>
+<dl class="meta">
+  <dt>Cor</dt><dd>Vermelha intensa, decorrente de alto teor de óxidos de ferro (hematita).</dd>
+  <dt>Onde ocorre</dt><dd>Sul, Sudeste e Centro-Oeste, especialmente em regiões com rochas ricas em ferro (basaltos, diabásios) — ex.: norte do Paraná, oeste de São Paulo, Triângulo Mineiro.</dd>
+  <dt>Aptidão</dt><dd>Excelente para mecanização agrícola; produtivo para grãos, café e cana quando corrigida a fertilidade.</dd>
+</dl>
+
+<h3><span class="code">LVA</span> Latossolo Vermelho-Amarelo</h3>
+<dl class="meta">
+  <dt>Cor</dt><dd>Tons intermediários entre vermelho e amarelo — mistura de hematita e goethita.</dd>
+  <dt>Onde ocorre</dt><dd>Distribuição ampla: Cerrado, Amazônia, Sudeste — é uma das classes mais frequentes do Brasil.</dd>
+  <dt>Aptidão</dt><dd>Boa para agricultura mecanizada e pastagens; geralmente distrófico, exigindo correção.</dd>
+</dl>
+
+<h3><span class="code">LA</span> Latossolo Amarelo</h3>
+<dl class="meta">
+  <dt>Cor</dt><dd>Amarela, dominada por goethita; baixo teor de hematita.</dd>
+  <dt>Onde ocorre</dt><dd>Tabuleiros costeiros do Nordeste, Amazônia oriental e platôs de baixa altitude.</dd>
+  <dt>Aptidão</dt><dd>Tende a ser mais coeso e ácido que o Vermelho; bom para fruticultura (mamão, citros, dendê) e cana.</dd>
+</dl>
+
+<h3><span class="code">LB</span> Latossolo Bruno</h3>
+<dl class="meta">
+  <dt>Cor</dt><dd>Bruno-acinzentada, geralmente em regiões mais frias e úmidas.</dd>
+  <dt>Onde ocorre</dt><dd>Planalto sul-brasileiro acima de 800 m: Santa Catarina, Rio Grande do Sul e sul do Paraná.</dd>
+  <dt>Aptidão</dt><dd>Aptos para grãos (soja, milho, trigo) e fruticultura de clima temperado (maçã).</dd>
+</dl>
+
+<!-- ============================ ARGISSOLOS ============================ -->
+<h2 id="argissolos">Argissolos</h2>
+<p>
+  Os Argissolos têm como principal característica um <strong>aumento marcante de argila em
+  profundidade</strong> — o horizonte B é mais argiloso que o A (horizonte B textural, Bt). Isso cria
+  uma diferença de permeabilidade entre as camadas que, dependendo do relevo, pode favorecer a erosão.
+  São solos geralmente <strong>profundos, mas mais suscetíveis à erosão</strong> que os Latossolos,
+  exigindo práticas conservacionistas (terraceamento, plantio em curva de nível).
+</p>
+
+<h3><span class="code">PV</span> Argissolo Vermelho</h3>
+<dl class="meta">
+  <dt>Cor</dt><dd>Vermelha intensa no horizonte B.</dd>
+  <dt>Onde ocorre</dt><dd>Sul e Sudeste, sobre rochas ricas em ferro; comum no Rio Grande do Sul e oeste paranaense.</dd>
+  <dt>Aptidão</dt><dd>Boa fertilidade natural quando eutrófico; produtivo para grãos, fruticultura e fumo.</dd>
+</dl>
+
+<h3><span class="code">PA</span> Argissolo Amarelo</h3>
+<dl class="meta">
+  <dt>Cor</dt><dd>Amarela predominante, com goethita.</dd>
+  <dt>Onde ocorre</dt><dd>Tabuleiros costeiros do Nordeste e da Amazônia.</dd>
+  <dt>Aptidão</dt><dd>Frequentemente coeso e ácido; usado para cana, fruticultura e culturas perenes.</dd>
+</dl>
+
+<h3><span class="code">PVA</span> Argissolo Vermelho-Amarelo</h3>
+<dl class="meta">
+  <dt>Cor</dt><dd>Tons intermediários entre vermelho e amarelo.</dd>
+  <dt>Onde ocorre</dt><dd>Distribuição muito ampla — é uma das classes mais extensas do território nacional, presente em todas as regiões.</dd>
+  <dt>Aptidão</dt><dd>Variável: depende do relevo (erosão), profundidade e fertilidade; usado para pastagens, café, grãos e silvicultura.</dd>
+</dl>
+
+<h3><span class="code">PAC</span> Argissolo Acinzentado</h3>
+<dl class="meta">
+  <dt>Cor</dt><dd>Acinzentada no horizonte B, indicando hidromorfismo ou baixo teor de óxidos.</dd>
+  <dt>Onde ocorre</dt><dd>Áreas de baixadas costeiras e regiões periodicamente úmidas.</dd>
+  <dt>Aptidão</dt><dd>Drenagem deficiente limita o uso; serve para pastagem e fruticultura adaptada à umidade.</dd>
+</dl>
+
+<!-- ============================ NITOSSOLOS ============================ -->
+<h2 id="nitossolos">Nitossolos</h2>
+<p>
+  Nitossolos são solos <strong>argilosos a muito argilosos</strong>, com transição gradual entre os
+  horizontes (sem a mudança textural abrupta dos Argissolos) e estrutura em <strong>blocos
+  fortemente desenvolvidos com superfícies brilhantes (cerosidade)</strong>. São profundos, bem
+  drenados e, em geral, <strong>férteis</strong> quando derivados de rochas básicas (basaltos).
+</p>
+
+<h3><span class="code">NV</span> Nitossolo Vermelho</h3>
+<dl class="meta">
+  <dt>Cor</dt><dd>Vermelha intensa, originada de rochas máficas (basaltos, diabásios).</dd>
+  <dt>Onde ocorre</dt><dd>Sul e Sudeste — clássicas "terras roxas" do norte do Paraná e oeste de São Paulo.</dd>
+  <dt>Aptidão</dt><dd>Altamente produtivos; ideais para soja, milho, café e cana-de-açúcar.</dd>
+</dl>
+
+<h3><span class="code">NX</span> Nitossolo Háplico</h3>
+<dl class="meta">
+  <dt>Cor</dt><dd>Variável (brunada, amarelada), sem o vermelho intenso dos derivados de basalto.</dd>
+  <dt>Onde ocorre</dt><dd>Áreas de transição em diversas regiões.</dd>
+  <dt>Aptidão</dt><dd>Bons solos agrícolas, embora menos férteis que os Vermelhos.</dd>
+</dl>
+
+<!-- ============================ CAMBISSOLOS ============================ -->
+<h2 id="cambissolos">Cambissolos</h2>
+<p>
+  Cambissolos são solos <strong>jovens, em estágio inicial de desenvolvimento</strong>, com horizonte B
+  incipiente (Bi) — apenas levemente alterado em relação à rocha original. São <strong>rasos a
+  medianamente profundos</strong>, frequentemente em relevos ondulados ou montanhosos, e podem
+  conter fragmentos de rocha.
+</p>
+
+<h3><span class="code">CX</span> Cambissolo Háplico</h3>
+<dl class="meta">
+  <dt>Característica</dt><dd>Cambissolo típico, sem horizonte húmico espesso. Pode ser distrófico ou eutrófico.</dd>
+  <dt>Onde ocorre</dt><dd>Áreas montanhosas do Sudeste, Nordeste semiárido e bordas de chapadas.</dd>
+  <dt>Aptidão</dt><dd>Limitada pela pouca profundidade e pelo relevo; mais usado para pastagem e fruticultura.</dd>
+</dl>
+
+<h3><span class="code">CH</span> Cambissolo Húmico</h3>
+<dl class="meta">
+  <dt>Característica</dt><dd>Horizonte superficial espesso e escuro, rico em matéria orgânica.</dd>
+  <dt>Onde ocorre</dt><dd>Áreas altas e úmidas do Sul e Sudeste, especialmente em campos de altitude.</dd>
+  <dt>Aptidão</dt><dd>Acentuadamente ácido e álico; usado para pastagem natural e silvicultura.</dd>
+</dl>
+
+<!-- ============================ NEOSSOLOS ============================ -->
+<h2 id="neossolos">Neossolos</h2>
+<p>
+  Neossolos são solos <strong>pouco evoluídos</strong>, sem horizonte B diagnóstico definido — seja
+  por serem muito jovens, muito arenosos, muito rasos sobre rocha, ou por estarem em deposição
+  contínua de sedimentos. Cada subordem reflete um motivo diferente para essa pouca evolução.
+</p>
+
+<h3><span class="code">RL</span> Neossolo Litólico</h3>
+<dl class="meta">
+  <dt>Característica</dt><dd>Muito raso (geralmente &lt; 50 cm), assentado diretamente sobre rocha.</dd>
+  <dt>Onde ocorre</dt><dd>Áreas montanhosas e Nordeste semiárido (Caatinga), onde a erosão remove o solo mais rápido do que ele se forma.</dd>
+  <dt>Aptidão</dt><dd>Inadequado para agricultura; ideal para preservação e pastagem extensiva.</dd>
+</dl>
+
+<h3><span class="code">RQ</span> Neossolo Quartzarênico</h3>
+<dl class="meta">
+  <dt>Característica</dt><dd>Profundo, mas com mais de 95% de areia (quartzo) — quase sem argila.</dd>
+  <dt>Onde ocorre</dt><dd>Áreas de cerrado do Centro-Oeste, costa litorânea e oeste da Bahia.</dd>
+  <dt>Aptidão</dt><dd>Baixíssima retenção de água e nutrientes; aptidão restrita a culturas adaptadas (eucalipto, abacaxi) com manejo intensivo.</dd>
+</dl>
+
+<h3><span class="code">RU</span> Neossolo Flúvico</h3>
+<dl class="meta">
+  <dt>Característica</dt><dd>Formado por sedimentos fluviais (aluviais) recentes, com camadas estratificadas.</dd>
+  <dt>Onde ocorre</dt><dd>Várzeas e planícies de inundação ao longo dos rios brasileiros.</dd>
+  <dt>Aptidão</dt><dd>Geralmente fértil; tradicionalmente cultivado com arroz, hortaliças e culturas de várzea.</dd>
+</dl>
+
+<h3><span class="code">RR</span> Neossolo Regolítico</h3>
+<dl class="meta">
+  <dt>Característica</dt><dd>Formado sobre material em decomposição da rocha (saprolito), com mais de 50 cm de profundidade.</dd>
+  <dt>Onde ocorre</dt><dd>Semiárido nordestino e áreas de relevo movimentado.</dd>
+  <dt>Aptidão</dt><dd>Limitada; usado para pastagem natural e culturas adaptadas à seca.</dd>
+</dl>
+
+<!-- ============================ GLEISSOLOS ============================ -->
+<h2 id="gleissolos">Gleissolos</h2>
+<p>
+  Gleissolos são solos <strong>permanentemente ou periodicamente saturados por água</strong>, em
+  posições baixas da paisagem. A falta de oxigênio promove a redução do ferro, originando as
+  típicas <strong>cores cinza-azuladas e mosqueados</strong> do horizonte glei. Têm drenagem
+  deficiente e exigem manejo específico.
+</p>
+
+<h3><span class="code">GX</span> Gleissolo Háplico</h3>
+<dl class="meta">
+  <dt>Característica</dt><dd>Gleissolo típico, sem caracteres sálicos ou sódicos.</dd>
+  <dt>Onde ocorre</dt><dd>Várzeas e baixadas em todo o país.</dd>
+  <dt>Aptidão</dt><dd>Apto para arroz irrigado e pastagem; com drenagem, hortaliças.</dd>
+</dl>
+
+<h3><span class="code">GZ</span> Gleissolo Sálico</h3>
+<dl class="meta">
+  <dt>Característica</dt><dd>Alta concentração de sais solúveis nos primeiros 100 cm.</dd>
+  <dt>Onde ocorre</dt><dd>Mangues e áreas costeiras com influência marinha; baixadas do semiárido.</dd>
+  <dt>Aptidão</dt><dd>Inapto para agricultura; ambientalmente importantes (mangues).</dd>
+</dl>
+
+<h3><span class="code">GJ</span> Gleissolo Tiomórfico</h3>
+<dl class="meta">
+  <dt>Característica</dt><dd>Apresenta horizonte sulfúrico ou materiais sulfídricos — extremamente ácido quando drenado.</dd>
+  <dt>Onde ocorre</dt><dd>Áreas de mangues e baixadas costeiras.</dd>
+  <dt>Aptidão</dt><dd>Inapto; a drenagem inadequada pode liberar ácido sulfúrico, devastando a área.</dd>
+</dl>
+
+<!-- ============================ PLINTOSSOLOS ============================ -->
+<h2 id="plintossolos">Plintossolos</h2>
+<p>
+  Plintossolos contêm <strong>plintita</strong> — material rico em argila e óxidos de ferro que se
+  apresenta em manchas vermelhas/amarelas mosqueadas e que <strong>endurece irreversivelmente quando
+  exposto à alternância de umedecimento e secagem</strong>. Quando essa plintita já está consolidada
+  na forma de cascalho ou couraça, chama-se petroplintita. Ocorrem em áreas de drenagem deficiente.
+</p>
+
+<h3><span class="code">FX</span> Plintossolo Háplico</h3>
+<dl class="meta">
+  <dt>Característica</dt><dd>Apresenta plintita ainda macia em significativa quantidade.</dd>
+  <dt>Onde ocorre</dt><dd>Cerrado, Amazônia e áreas planas de drenagem imperfeita.</dd>
+  <dt>Aptidão</dt><dd>Restrita: a alternância de seca e encharcamento é desafio agrícola; usado para pastagem.</dd>
+</dl>
+
+<h3><span class="code">FF</span> Plintossolo Pétrico</h3>
+<dl class="meta">
+  <dt>Característica</dt><dd>Predomínio de petroplintita (concreções ou couraça ferruginosa endurecida).</dd>
+  <dt>Onde ocorre</dt><dd>Chapadas e platôs do Cerrado e da Amazônia.</dd>
+  <dt>Aptidão</dt><dd>Limitada por presença de cascalho e baixa profundidade efetiva; pastagem e silvicultura.</dd>
+</dl>
+
+<!-- ============================ ESPODOSSOLOS ============================ -->
+<h2 id="espodossolos">Espodossolos</h2>
+<p>
+  Espodossolos são solos <strong>arenosos</strong>, com um horizonte superficial claro (E, lixiviado) e
+  um horizonte B espódico <strong>escuro, cimentado por matéria orgânica e/ou ferro/alumínio</strong>.
+  Têm fertilidade muito baixa, são fortemente ácidos e ocorrem em ambientes pobres.
+</p>
+
+<h3><span class="code">ES</span> Espodossolo Ferro-Húmico/Humilúvico/Ferrilúvico</h3>
+<dl class="meta">
+  <dt>Característica</dt><dd>Acumulação subsuperficial de matéria orgânica e/ou óxidos de ferro/alumínio.</dd>
+  <dt>Onde ocorre</dt><dd>Restingas litorâneas (sul ao Nordeste), campinas amazônicas, áreas arenosas planas.</dd>
+  <dt>Aptidão</dt><dd>Quase nenhuma para agricultura; ambientalmente sensíveis (restingas).</dd>
+</dl>
+
+<!-- ============================ PLANOSSOLOS ============================ -->
+<h2 id="planossolos">Planossolos</h2>
+<p>
+  Planossolos têm uma <strong>mudança textural muito abrupta</strong> entre o horizonte A (arenoso) e o
+  horizonte B (argiloso, muito adensado, quase impermeável). Essa diferença causa
+  <strong>encharcamento sazonal sobre a camada impermeável</strong> e dificulta o crescimento de raízes.
+</p>
+
+<h3><span class="code">SX</span> Planossolo Háplico</h3>
+<dl class="meta">
+  <dt>Característica</dt><dd>Planossolo típico, sem caracteres sálicos ou sódicos extremos.</dd>
+  <dt>Onde ocorre</dt><dd>Pampa gaúcho, várzeas do Nordeste e áreas de relevo plano.</dd>
+  <dt>Aptidão</dt><dd>Tradicional para arroz irrigado e pastagem; agricultura de sequeiro é limitada.</dd>
+</dl>
+
+<h3><span class="code">SG</span> Planossolo Hidromórfico</h3>
+<dl class="meta">
+  <dt>Característica</dt><dd>Saturação por água mais persistente.</dd>
+  <dt>Onde ocorre</dt><dd>Baixadas e várzeas, especialmente no Rio Grande do Sul.</dd>
+  <dt>Aptidão</dt><dd>Arroz irrigado, pecuária extensiva.</dd>
+</dl>
+
+<h3><span class="code">SN</span> Planossolo Nátrico</h3>
+<dl class="meta">
+  <dt>Característica</dt><dd>Alta saturação por sódio (≥ 15%) — solo sódico, com péssima estrutura física.</dd>
+  <dt>Onde ocorre</dt><dd>Sertão nordestino e áreas semiáridas.</dd>
+  <dt>Aptidão</dt><dd>Inadequado para agricultura sem recuperação; uso restrito a pastagem.</dd>
+</dl>
+
+<!-- ============================ LUVISSOLOS ============================ -->
+<h2 id="luvissolos">Luvissolos</h2>
+<p>
+  Luvissolos têm <strong>acúmulo de argila no horizonte B</strong> (similar aos Argissolos), porém são
+  rasos a medianamente profundos, com <strong>alta saturação por bases (eutróficos)</strong> — ou seja,
+  são <strong>solos férteis</strong>. Característicos de regiões com déficit hídrico.
+</p>
+
+<h3><span class="code">TC</span> Luvissolo Crômico</h3>
+<dl class="meta">
+  <dt>Característica</dt><dd>Cores vivas (avermelhadas/amarronzadas) no B; alta fertilidade natural.</dd>
+  <dt>Onde ocorre</dt><dd>Sertão nordestino (Caatinga) e regiões semiáridas.</dd>
+  <dt>Aptidão</dt><dd>Bom potencial agrícola, limitado pela seca; usado para algodão, milho, feijão e pastagem.</dd>
+</dl>
+
+<!-- ============================ VERTISSOLOS ============================ -->
+<h2 id="vertissolos">Vertissolos</h2>
+<p>
+  Vertissolos são solos <strong>extremamente argilosos</strong> (&gt; 30% de argila) e ricos em
+  argilominerais expansivos (esmectitas). <strong>Incham quando úmidos e racham quando secos</strong>,
+  formando fendas profundas e estrutura em prismas ou blocos angulares. São férteis, mas
+  fisicamente difíceis de manejar.
+</p>
+
+<h3><span class="code">VC</span> Vertissolo Cromado</h3>
+<dl class="meta">
+  <dt>Cor</dt><dd>Brunada a avermelhada.</dd>
+  <dt>Onde ocorre</dt><dd>Áreas semiáridas do Nordeste, baixadas com rochas calcárias.</dd>
+  <dt>Aptidão</dt><dd>Fértil; agricultura difícil pela alta plasticidade quando úmido e pelos rachados quando seco.</dd>
+</dl>
+
+<h3><span class="code">VE</span> Vertissolo Ebânico</h3>
+<dl class="meta">
+  <dt>Cor</dt><dd>Muito escura, quase preta (ebânica), rica em matéria orgânica.</dd>
+  <dt>Onde ocorre</dt><dd>Recôncavo Baiano e Nordeste sobre rochas básicas.</dd>
+  <dt>Aptidão</dt><dd>Alta fertilidade; cultivado historicamente com cana, algodão e fumo.</dd>
+</dl>
+
+<h3><span class="code">VG</span> Vertissolo Hidromórfico</h3>
+<dl class="meta">
+  <dt>Característica</dt><dd>Saturação por água em parte do ano.</dd>
+  <dt>Onde ocorre</dt><dd>Baixadas e várzeas com argila expansiva.</dd>
+  <dt>Aptidão</dt><dd>Arroz irrigado e pastagem; manejo físico complicado.</dd>
+</dl>
+
+<!-- ============================ CHERNOSSOLOS ============================ -->
+<h2 id="chernossolos">Chernossolos</h2>
+<p>
+  Chernossolos são solos com <strong>horizonte superficial escuro (chernozêmico), rico em matéria
+  orgânica e cálcio</strong>, e <strong>alta saturação por bases</strong>. Estão entre os solos mais
+  férteis do Brasil, embora pouco extensos.
+</p>
+
+<h3><span class="code">MT</span> Chernossolo Argilúvico</h3>
+<dl class="meta">
+  <dt>Característica</dt><dd>Presença de horizonte B textural (acúmulo de argila).</dd>
+  <dt>Onde ocorre</dt><dd>Pampa gaúcho e áreas isoladas do Nordeste.</dd>
+  <dt>Aptidão</dt><dd>Excelente para grãos e pastagem; alta fertilidade natural.</dd>
+</dl>
+
+<h3><span class="code">MD</span> Chernossolo Rêndzico</h3>
+<dl class="meta">
+  <dt>Característica</dt><dd>Raso, sobre material rico em carbonato de cálcio (rochas calcárias).</dd>
+  <dt>Onde ocorre</dt><dd>Áreas calcárias localizadas (semiárido nordestino, parte do Brasil Central).</dd>
+  <dt>Aptidão</dt><dd>Alta fertilidade, mas profundidade limitada restringe o uso.</dd>
+</dl>
+
+<h3><span class="code">ME</span> Chernossolo Ebânico</h3>
+<dl class="meta">
+  <dt>Característica</dt><dd>Coloração muito escura no perfil; estrutura bem desenvolvida.</dd>
+  <dt>Onde ocorre</dt><dd>Áreas isoladas do Sul e Nordeste sobre rochas básicas.</dd>
+  <dt>Aptidão</dt><dd>Solos férteis e produtivos.</dd>
+</dl>
+
+<!-- ============================ ALISSOLOS ============================ -->
+<h2 id="alissolos">Alissolos</h2>
+<p>
+  A ordem Alissolo aparece em mapeamentos mais antigos (anteriores à edição vigente do SiBCS, que a
+  reagrupou principalmente em Argissolos e Nitossolos com caráter alítico). Caracterizam-se por
+  <strong>altíssima saturação por alumínio</strong> e baixa saturação por bases — solos pobres,
+  ácidos e com toxidez ao alumínio para a maioria das plantas cultivadas.
+</p>
+
+<h3><span class="code">AC</span> Alissolo Crômico</h3>
+<dl class="meta">
+  <dt>Característica</dt><dd>Argilúvico, com cores vivas (não cinza).</dd>
+  <dt>Onde ocorre</dt><dd>Áreas dispersas no Sul e Sudeste em rochas ácidas.</dd>
+  <dt>Aptidão</dt><dd>Restrita; exige forte correção de acidez e remoção de alumínio.</dd>
+</dl>
+
+<!-- ============================ ORGANOSSOLOS ============================ -->
+<h2 id="organossolos">Organossolos</h2>
+<p>
+  Organossolos são solos formados pela <strong>acumulação de material orgânico</strong> em condições de
+  saturação por água (turfas) ou em ambientes frios e úmidos. Têm <strong>coloração muito escura e
+  baixa densidade</strong>.
+</p>
+
+<h3><span class="code">OY</span> Organossolo</h3>
+<dl class="meta">
+  <dt>Característica</dt><dd>Camada orgânica espessa (&gt; 40 cm) sobre material mineral.</dd>
+  <dt>Onde ocorre</dt><dd>Várzeas, banhados e campos de altitude (Serra do Mar, Serra Gaúcha).</dd>
+  <dt>Aptidão</dt><dd>Conservação ambiental; uso agrícola exige drenagem cuidadosa, com risco de subsidência e perda do solo por oxidação.</dd>
+</dl>
+
+<!-- ============================ OUTROS ============================ -->
+<h2 id="outros">Outras representações cartográficas</h2>
+<p>
+  Algumas unidades de mapeamento não representam solos propriamente ditos, mas elementos da paisagem
+  ou ambientes que aparecem nas cartas pedológicas:
+</p>
+
+<h3><span class="code">AR</span> Afloramento Rochoso</h3>
+<p>
+  Exposições de rocha na superfície, sem cobertura de solo significativa. Comuns em serras,
+  inselbergs do semiárido e topos de morros. Não têm aptidão agrícola.
+</p>
+
+<h3><span class="code">DN</span> Dunas</h3>
+<p>
+  Depósitos eólicos de areia, móveis ou semi-fixados por vegetação. Comuns no litoral nordestino
+  (Lençóis Maranhenses, Cabo Frio) e em algumas áreas continentais. Não constituem solo agricultável.
+</p>
+
+<h3><span class="code">Magua</span> Massa d'água</h3>
+<p>
+  Corpos d'água — rios, lagos, açudes, lagoas costeiras e a zona econômica exclusiva marítima.
+  Inseridos no mapa para completar a cobertura territorial.
+</p>
+
+<footer>
+  <p>
+    <strong>Referências:</strong> Embrapa Solos, <em>Sistema Brasileiro de Classificação de Solos</em>;
+    IBGE, <em>Manual Técnico de Pedologia</em>; Lepsch, I.F., <em>Formação e Conservação dos Solos</em>.
+  </p>
+  <p>
+    Este guia é material didático complementar ao projeto Mapa de Solos. As descrições são
+    aproximações em linguagem acessível e não substituem consulta técnica ao SiBCS.
+  </p>
+</footer>
+
+</main>
+</body>
+</html>
