@@ -1,0 +1,6676 @@
+{
+  "metadata": {
+    "database": "mock_soils_brazil",
+    "description": "Base mockada para testes de API com coordenadas aleatórias dentro de uma faixa aproximada do Brasil.",
+    "coordinateSystem": "WGS84",
+    "radiusUnit": "meters",
+    "total": 250
+  },
+  "soilTypes": [
+    {
+      "key": "A",
+      "name": "Solo tipo A"
+    },
+    {
+      "key": "B",
+      "name": "Solo tipo B"
+    },
+    {
+      "key": "C",
+      "name": "Solo tipo C"
+    }
+  ],
+  "soils": [
+    {
+      "id": "soil-0001",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -32.77408,
+          "long": -63.208851
+        },
+        "radius": 2078
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.582891+00:00"
+      }
+    },
+    {
+      "id": "soil-0002",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": 1.102382,
+            "long": -70.621533
+          },
+          {
+            "lat": 1.102382,
+            "long": -70.542463
+          },
+          {
+            "lat": 1.023312,
+            "long": -70.542463
+          },
+          {
+            "lat": 1.023312,
+            "long": -70.621533
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.582921+00:00"
+      }
+    },
+    {
+      "id": "soil-0003",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -14.031037,
+          "long": -72.94979
+        },
+        "radius": 1878
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.582933+00:00"
+      }
+    },
+    {
+      "id": "soil-0004",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -10.746398,
+            "long": -42.260326
+          },
+          {
+            "lat": -10.76208,
+            "long": -42.249871
+          },
+          {
+            "lat": -10.76208,
+            "long": -42.270781
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.582947+00:00"
+      }
+    },
+    {
+      "id": "soil-0005",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -27.649628,
+            "long": -36.467248
+          },
+          {
+            "lat": -27.699971,
+            "long": -36.433686
+          },
+          {
+            "lat": -27.699971,
+            "long": -36.50081
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.582960+00:00"
+      }
+    },
+    {
+      "id": "soil-0006",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -0.614271,
+            "long": -50.32394
+          },
+          {
+            "lat": -0.714019,
+            "long": -50.257441
+          },
+          {
+            "lat": -0.714019,
+            "long": -50.390439
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.582971+00:00"
+      }
+    },
+    {
+      "id": "soil-0007",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -12.209375,
+          "long": -41.477337
+        },
+        "radius": 3212
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.582978+00:00"
+      }
+    },
+    {
+      "id": "soil-0008",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -31.961933,
+          "long": -65.056388
+        },
+        "radius": 2620
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.582984+00:00"
+      }
+    },
+    {
+      "id": "soil-0009",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -22.867932,
+            "long": -49.07117
+          },
+          {
+            "lat": -22.921239,
+            "long": -49.035632
+          },
+          {
+            "lat": -22.921239,
+            "long": -49.106708
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.582995+00:00"
+      }
+    },
+    {
+      "id": "soil-0010",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -23.277163,
+            "long": -37.328502
+          },
+          {
+            "lat": -23.277163,
+            "long": -37.217778
+          },
+          {
+            "lat": -23.387887,
+            "long": -37.217778
+          },
+          {
+            "lat": -23.387887,
+            "long": -37.328502
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583007+00:00"
+      }
+    },
+    {
+      "id": "soil-0011",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -24.168582,
+            "long": -55.898296
+          },
+          {
+            "lat": -24.168582,
+            "long": -55.840504
+          },
+          {
+            "lat": -24.226374,
+            "long": -55.840504
+          },
+          {
+            "lat": -24.226374,
+            "long": -55.898296
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583018+00:00"
+      }
+    },
+    {
+      "id": "soil-0012",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -0.835885,
+            "long": -43.570803
+          },
+          {
+            "lat": -0.874935,
+            "long": -43.54477
+          },
+          {
+            "lat": -0.874935,
+            "long": -43.596836
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583029+00:00"
+      }
+    },
+    {
+      "id": "soil-0013",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -31.117618,
+            "long": -38.195064
+          },
+          {
+            "lat": -31.192172,
+            "long": -38.145361
+          },
+          {
+            "lat": -31.192172,
+            "long": -38.244767
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583039+00:00"
+      }
+    },
+    {
+      "id": "soil-0014",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -18.270323,
+            "long": -38.139734
+          },
+          {
+            "lat": -18.333503,
+            "long": -38.097614
+          },
+          {
+            "lat": -18.333503,
+            "long": -38.181854
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583054+00:00"
+      }
+    },
+    {
+      "id": "soil-0015",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -11.794494,
+            "long": -63.74145
+          },
+          {
+            "lat": -11.794494,
+            "long": -63.639608
+          },
+          {
+            "lat": -11.896336,
+            "long": -63.639608
+          },
+          {
+            "lat": -11.896336,
+            "long": -63.74145
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583065+00:00"
+      }
+    },
+    {
+      "id": "soil-0016",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": 5.165652,
+          "long": -68.567396
+        },
+        "radius": 4292
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583070+00:00"
+      }
+    },
+    {
+      "id": "soil-0017",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -9.267055,
+          "long": -42.940489
+        },
+        "radius": 3708
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583076+00:00"
+      }
+    },
+    {
+      "id": "soil-0018",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -10.470835,
+            "long": -55.642444
+          },
+          {
+            "lat": -10.512233,
+            "long": -55.614845
+          },
+          {
+            "lat": -10.512233,
+            "long": -55.670043
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583088+00:00"
+      }
+    },
+    {
+      "id": "soil-0019",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -29.21763,
+            "long": -39.368854
+          },
+          {
+            "lat": -29.21763,
+            "long": -39.243732
+          },
+          {
+            "lat": -29.342752,
+            "long": -39.243732
+          },
+          {
+            "lat": -29.342752,
+            "long": -39.368854
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583100+00:00"
+      }
+    },
+    {
+      "id": "soil-0020",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -27.518138,
+            "long": -73.862784
+          },
+          {
+            "lat": -27.608957,
+            "long": -73.802238
+          },
+          {
+            "lat": -27.608957,
+            "long": -73.92333
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583112+00:00"
+      }
+    },
+    {
+      "id": "soil-0021",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": 0.217635,
+          "long": -62.290964
+        },
+        "radius": 4408
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583118+00:00"
+      }
+    },
+    {
+      "id": "soil-0022",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -3.932325,
+            "long": -52.846342
+          },
+          {
+            "lat": -4.029081,
+            "long": -52.781838
+          },
+          {
+            "lat": -4.029081,
+            "long": -52.910846
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583128+00:00"
+      }
+    },
+    {
+      "id": "soil-0023",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -14.649196,
+            "long": -69.604785
+          },
+          {
+            "lat": -14.702309,
+            "long": -69.569376
+          },
+          {
+            "lat": -14.702309,
+            "long": -69.640194
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583137+00:00"
+      }
+    },
+    {
+      "id": "soil-0024",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": 0.509935,
+          "long": -36.869582
+        },
+        "radius": 951
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583143+00:00"
+      }
+    },
+    {
+      "id": "soil-0025",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -28.740165,
+          "long": -55.358931
+        },
+        "radius": 4753
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583148+00:00"
+      }
+    },
+    {
+      "id": "soil-0026",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -17.191407,
+            "long": -65.735261
+          },
+          {
+            "lat": -17.191407,
+            "long": -65.639759
+          },
+          {
+            "lat": -17.286909,
+            "long": -65.639759
+          },
+          {
+            "lat": -17.286909,
+            "long": -65.735261
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583161+00:00"
+      }
+    },
+    {
+      "id": "soil-0027",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -8.345528,
+            "long": -56.862707
+          },
+          {
+            "lat": -8.345528,
+            "long": -56.770247
+          },
+          {
+            "lat": -8.437988,
+            "long": -56.770247
+          },
+          {
+            "lat": -8.437988,
+            "long": -56.862707
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583172+00:00"
+      }
+    },
+    {
+      "id": "soil-0028",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -20.557901,
+          "long": -50.928298
+        },
+        "radius": 2135
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583178+00:00"
+      }
+    },
+    {
+      "id": "soil-0029",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -6.130046,
+          "long": -71.682148
+        },
+        "radius": 802
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583183+00:00"
+      }
+    },
+    {
+      "id": "soil-0030",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -24.438062,
+            "long": -47.791068
+          },
+          {
+            "lat": -24.438062,
+            "long": -47.741074
+          },
+          {
+            "lat": -24.488056,
+            "long": -47.741074
+          },
+          {
+            "lat": -24.488056,
+            "long": -47.791068
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583194+00:00"
+      }
+    },
+    {
+      "id": "soil-0031",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -2.224682,
+            "long": -66.525931
+          },
+          {
+            "lat": -2.24986,
+            "long": -66.509146
+          },
+          {
+            "lat": -2.24986,
+            "long": -66.542716
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583204+00:00"
+      }
+    },
+    {
+      "id": "soil-0032",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -15.469561,
+            "long": -45.410227
+          },
+          {
+            "lat": -15.555265,
+            "long": -45.353091
+          },
+          {
+            "lat": -15.555265,
+            "long": -45.467363
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583213+00:00"
+      }
+    },
+    {
+      "id": "soil-0033",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -20.483006,
+            "long": -40.239843
+          },
+          {
+            "lat": -20.483006,
+            "long": -40.185031
+          },
+          {
+            "lat": -20.537818,
+            "long": -40.185031
+          },
+          {
+            "lat": -20.537818,
+            "long": -40.239843
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583225+00:00"
+      }
+    },
+    {
+      "id": "soil-0034",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -26.519083,
+            "long": -55.85498
+          },
+          {
+            "lat": -26.625904,
+            "long": -55.783766
+          },
+          {
+            "lat": -26.625904,
+            "long": -55.926194
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583234+00:00"
+      }
+    },
+    {
+      "id": "soil-0035",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -31.776043,
+          "long": -34.818127
+        },
+        "radius": 370
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583240+00:00"
+      }
+    },
+    {
+      "id": "soil-0036",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -14.76221,
+            "long": -65.611106
+          },
+          {
+            "lat": -14.819319,
+            "long": -65.573033
+          },
+          {
+            "lat": -14.819319,
+            "long": -65.649179
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583250+00:00"
+      }
+    },
+    {
+      "id": "soil-0037",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": 4.696751,
+          "long": -63.59404
+        },
+        "radius": 3977
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583256+00:00"
+      }
+    },
+    {
+      "id": "soil-0038",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": 5.151682,
+            "long": -52.264171
+          },
+          {
+            "lat": 5.151682,
+            "long": -52.143593
+          },
+          {
+            "lat": 5.031104,
+            "long": -52.143593
+          },
+          {
+            "lat": 5.031104,
+            "long": -52.264171
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583266+00:00"
+      }
+    },
+    {
+      "id": "soil-0039",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": 4.049039,
+          "long": -51.286133
+        },
+        "radius": 4691
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583272+00:00"
+      }
+    },
+    {
+      "id": "soil-0040",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -10.95539,
+          "long": -54.278265
+        },
+        "radius": 4600
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583277+00:00"
+      }
+    },
+    {
+      "id": "soil-0041",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -0.530614,
+          "long": -71.303964
+        },
+        "radius": 806
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583283+00:00"
+      }
+    },
+    {
+      "id": "soil-0042",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -24.08932,
+            "long": -50.738206
+          },
+          {
+            "lat": -24.08932,
+            "long": -50.631492
+          },
+          {
+            "lat": -24.196034,
+            "long": -50.631492
+          },
+          {
+            "lat": -24.196034,
+            "long": -50.738206
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583293+00:00"
+      }
+    },
+    {
+      "id": "soil-0043",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -7.617292,
+          "long": -61.673993
+        },
+        "radius": 2425
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583299+00:00"
+      }
+    },
+    {
+      "id": "soil-0044",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -21.981483,
+            "long": -61.658485
+          },
+          {
+            "lat": -21.981483,
+            "long": -61.533223
+          },
+          {
+            "lat": -22.106745,
+            "long": -61.533223
+          },
+          {
+            "lat": -22.106745,
+            "long": -61.658485
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583309+00:00"
+      }
+    },
+    {
+      "id": "soil-0045",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": 5.22482,
+            "long": -34.958147
+          },
+          {
+            "lat": 5.22482,
+            "long": -34.927891
+          },
+          {
+            "lat": 5.194564,
+            "long": -34.927891
+          },
+          {
+            "lat": 5.194564,
+            "long": -34.958147
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583319+00:00"
+      }
+    },
+    {
+      "id": "soil-0046",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": 0.657187,
+            "long": -39.522606
+          },
+          {
+            "lat": 0.603387,
+            "long": -39.486739
+          },
+          {
+            "lat": 0.603387,
+            "long": -39.558473
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583328+00:00"
+      }
+    },
+    {
+      "id": "soil-0047",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -21.879284,
+            "long": -35.489447
+          },
+          {
+            "lat": -21.879284,
+            "long": -35.356453
+          },
+          {
+            "lat": -22.012278,
+            "long": -35.356453
+          },
+          {
+            "lat": -22.012278,
+            "long": -35.489447
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583339+00:00"
+      }
+    },
+    {
+      "id": "soil-0048",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -21.992516,
+            "long": -48.060887
+          },
+          {
+            "lat": -21.992516,
+            "long": -47.909437
+          },
+          {
+            "lat": -22.143966,
+            "long": -47.909437
+          },
+          {
+            "lat": -22.143966,
+            "long": -48.060887
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583349+00:00"
+      }
+    },
+    {
+      "id": "soil-0049",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -4.780901,
+          "long": -67.896442
+        },
+        "radius": 2558
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583355+00:00"
+      }
+    },
+    {
+      "id": "soil-0050",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -25.777154,
+            "long": -49.127872
+          },
+          {
+            "lat": -25.819872,
+            "long": -49.099393
+          },
+          {
+            "lat": -25.819872,
+            "long": -49.156351
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583364+00:00"
+      }
+    },
+    {
+      "id": "soil-0051",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -9.000221,
+          "long": -41.479555
+        },
+        "radius": 611
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583369+00:00"
+      }
+    },
+    {
+      "id": "soil-0052",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": 4.522644,
+            "long": -67.696915
+          },
+          {
+            "lat": 4.522644,
+            "long": -67.615059
+          },
+          {
+            "lat": 4.440788,
+            "long": -67.615059
+          },
+          {
+            "lat": 4.440788,
+            "long": -67.696915
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583380+00:00"
+      }
+    },
+    {
+      "id": "soil-0053",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": 3.125888,
+          "long": -46.902031
+        },
+        "radius": 1471
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583385+00:00"
+      }
+    },
+    {
+      "id": "soil-0054",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -12.177543,
+            "long": -57.155289
+          },
+          {
+            "lat": -12.177543,
+            "long": -57.129433
+          },
+          {
+            "lat": -12.203399,
+            "long": -57.129433
+          },
+          {
+            "lat": -12.203399,
+            "long": -57.155289
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583397+00:00"
+      }
+    },
+    {
+      "id": "soil-0055",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -7.135758,
+          "long": -47.84621
+        },
+        "radius": 3147
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583403+00:00"
+      }
+    },
+    {
+      "id": "soil-0056",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -27.648807,
+            "long": -37.609186
+          },
+          {
+            "lat": -27.648807,
+            "long": -37.468142
+          },
+          {
+            "lat": -27.789851,
+            "long": -37.468142
+          },
+          {
+            "lat": -27.789851,
+            "long": -37.609186
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583413+00:00"
+      }
+    },
+    {
+      "id": "soil-0057",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -5.009254,
+          "long": -60.96833
+        },
+        "radius": 3622
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583419+00:00"
+      }
+    },
+    {
+      "id": "soil-0058",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -29.462007,
+            "long": -39.871164
+          },
+          {
+            "lat": -29.462007,
+            "long": -39.73096
+          },
+          {
+            "lat": -29.602211,
+            "long": -39.73096
+          },
+          {
+            "lat": -29.602211,
+            "long": -39.871164
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583429+00:00"
+      }
+    },
+    {
+      "id": "soil-0059",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -21.81552,
+            "long": -42.812456
+          },
+          {
+            "lat": -21.854418,
+            "long": -42.786524
+          },
+          {
+            "lat": -21.854418,
+            "long": -42.838388
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583438+00:00"
+      }
+    },
+    {
+      "id": "soil-0060",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -22.814776,
+            "long": -71.268706
+          },
+          {
+            "lat": -22.910975,
+            "long": -71.204573
+          },
+          {
+            "lat": -22.910975,
+            "long": -71.332839
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583448+00:00"
+      }
+    },
+    {
+      "id": "soil-0061",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -20.757139,
+            "long": -72.979452
+          },
+          {
+            "lat": -20.757139,
+            "long": -72.836666
+          },
+          {
+            "lat": -20.899925,
+            "long": -72.836666
+          },
+          {
+            "lat": -20.899925,
+            "long": -72.979452
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583458+00:00"
+      }
+    },
+    {
+      "id": "soil-0062",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -32.223006,
+            "long": -50.604407
+          },
+          {
+            "lat": -32.274303,
+            "long": -50.570209
+          },
+          {
+            "lat": -32.274303,
+            "long": -50.638605
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583467+00:00"
+      }
+    },
+    {
+      "id": "soil-0063",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -29.214196,
+            "long": -38.75272
+          },
+          {
+            "lat": -29.214196,
+            "long": -38.706108
+          },
+          {
+            "lat": -29.260808,
+            "long": -38.706108
+          },
+          {
+            "lat": -29.260808,
+            "long": -38.75272
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583477+00:00"
+      }
+    },
+    {
+      "id": "soil-0064",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": 2.426303,
+            "long": -52.943042
+          },
+          {
+            "lat": 2.426303,
+            "long": -52.822322
+          },
+          {
+            "lat": 2.305583,
+            "long": -52.822322
+          },
+          {
+            "lat": 2.305583,
+            "long": -52.943042
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583487+00:00"
+      }
+    },
+    {
+      "id": "soil-0065",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": 3.275082,
+          "long": -37.895782
+        },
+        "radius": 2821
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583493+00:00"
+      }
+    },
+    {
+      "id": "soil-0066",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -7.669034,
+            "long": -61.20363
+          },
+          {
+            "lat": -7.757241,
+            "long": -61.144825
+          },
+          {
+            "lat": -7.757241,
+            "long": -61.262435
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583502+00:00"
+      }
+    },
+    {
+      "id": "soil-0067",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -7.742084,
+            "long": -59.127505
+          },
+          {
+            "lat": -7.835638,
+            "long": -59.065136
+          },
+          {
+            "lat": -7.835638,
+            "long": -59.189874
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583511+00:00"
+      }
+    },
+    {
+      "id": "soil-0068",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -1.193331,
+            "long": -62.102815
+          },
+          {
+            "lat": -1.193331,
+            "long": -62.053389
+          },
+          {
+            "lat": -1.242757,
+            "long": -62.053389
+          },
+          {
+            "lat": -1.242757,
+            "long": -62.102815
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583522+00:00"
+      }
+    },
+    {
+      "id": "soil-0069",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -16.453802,
+            "long": -65.612905
+          },
+          {
+            "lat": -16.518487,
+            "long": -65.569782
+          },
+          {
+            "lat": -16.518487,
+            "long": -65.656028
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583533+00:00"
+      }
+    },
+    {
+      "id": "soil-0070",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -7.829886,
+            "long": -49.731513
+          },
+          {
+            "lat": -7.829886,
+            "long": -49.698439
+          },
+          {
+            "lat": -7.86296,
+            "long": -49.698439
+          },
+          {
+            "lat": -7.86296,
+            "long": -49.731513
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583544+00:00"
+      }
+    },
+    {
+      "id": "soil-0071",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -28.000248,
+          "long": -72.178422
+        },
+        "radius": 4142
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583550+00:00"
+      }
+    },
+    {
+      "id": "soil-0072",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": 0.887346,
+            "long": -51.423701
+          },
+          {
+            "lat": 0.79692,
+            "long": -51.363417
+          },
+          {
+            "lat": 0.79692,
+            "long": -51.483985
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583559+00:00"
+      }
+    },
+    {
+      "id": "soil-0073",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -27.991766,
+          "long": -47.035201
+        },
+        "radius": 1123
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583565+00:00"
+      }
+    },
+    {
+      "id": "soil-0074",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -13.511845,
+            "long": -72.048883
+          },
+          {
+            "lat": -13.511845,
+            "long": -71.993995
+          },
+          {
+            "lat": -13.566733,
+            "long": -71.993995
+          },
+          {
+            "lat": -13.566733,
+            "long": -72.048883
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583575+00:00"
+      }
+    },
+    {
+      "id": "soil-0075",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -7.649435,
+            "long": -35.264616
+          },
+          {
+            "lat": -7.726958,
+            "long": -35.212934
+          },
+          {
+            "lat": -7.726958,
+            "long": -35.316298
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583584+00:00"
+      }
+    },
+    {
+      "id": "soil-0076",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": 1.302287,
+            "long": -44.838707
+          },
+          {
+            "lat": 1.237446,
+            "long": -44.79548
+          },
+          {
+            "lat": 1.237446,
+            "long": -44.881934
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583594+00:00"
+      }
+    },
+    {
+      "id": "soil-0077",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -3.814078,
+            "long": -53.555047
+          },
+          {
+            "lat": -3.894886,
+            "long": -53.501175
+          },
+          {
+            "lat": -3.894886,
+            "long": -53.608919
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583603+00:00"
+      }
+    },
+    {
+      "id": "soil-0078",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -22.568508,
+            "long": -63.371148
+          },
+          {
+            "lat": -22.568508,
+            "long": -63.306388
+          },
+          {
+            "lat": -22.633268,
+            "long": -63.306388
+          },
+          {
+            "lat": -22.633268,
+            "long": -63.371148
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583614+00:00"
+      }
+    },
+    {
+      "id": "soil-0079",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -24.726177,
+          "long": -46.787167
+        },
+        "radius": 2002
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583623+00:00"
+      }
+    },
+    {
+      "id": "soil-0080",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -12.552835,
+            "long": -57.69165
+          },
+          {
+            "lat": -12.589552,
+            "long": -57.667172
+          },
+          {
+            "lat": -12.589552,
+            "long": -57.716128
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583637+00:00"
+      }
+    },
+    {
+      "id": "soil-0081",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -32.937565,
+            "long": -39.518556
+          },
+          {
+            "lat": -32.937565,
+            "long": -39.41796
+          },
+          {
+            "lat": -33.038161,
+            "long": -39.41796
+          },
+          {
+            "lat": -33.038161,
+            "long": -39.518556
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583657+00:00"
+      }
+    },
+    {
+      "id": "soil-0082",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -4.272661,
+            "long": -40.53484
+          },
+          {
+            "lat": -4.387771,
+            "long": -40.4581
+          },
+          {
+            "lat": -4.387771,
+            "long": -40.61158
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583674+00:00"
+      }
+    },
+    {
+      "id": "soil-0083",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -23.100064,
+          "long": -54.952834
+        },
+        "radius": 3435
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583685+00:00"
+      }
+    },
+    {
+      "id": "soil-0084",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -0.953469,
+          "long": -37.943968
+        },
+        "radius": 4625
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583691+00:00"
+      }
+    },
+    {
+      "id": "soil-0085",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -7.839746,
+            "long": -70.739262
+          },
+          {
+            "lat": -7.839746,
+            "long": -70.659256
+          },
+          {
+            "lat": -7.919752,
+            "long": -70.659256
+          },
+          {
+            "lat": -7.919752,
+            "long": -70.739262
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583701+00:00"
+      }
+    },
+    {
+      "id": "soil-0086",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -18.924488,
+            "long": -65.692917
+          },
+          {
+            "lat": -18.973807,
+            "long": -65.660038
+          },
+          {
+            "lat": -18.973807,
+            "long": -65.725796
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583710+00:00"
+      }
+    },
+    {
+      "id": "soil-0087",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -1.109344,
+            "long": -55.553972
+          },
+          {
+            "lat": -1.202992,
+            "long": -55.49154
+          },
+          {
+            "lat": -1.202992,
+            "long": -55.616404
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583720+00:00"
+      }
+    },
+    {
+      "id": "soil-0088",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -31.059693,
+            "long": -36.477222
+          },
+          {
+            "lat": -31.059693,
+            "long": -36.451586
+          },
+          {
+            "lat": -31.085329,
+            "long": -36.451586
+          },
+          {
+            "lat": -31.085329,
+            "long": -36.477222
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583730+00:00"
+      }
+    },
+    {
+      "id": "soil-0089",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -9.505483,
+          "long": -64.639038
+        },
+        "radius": 4129
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583736+00:00"
+      }
+    },
+    {
+      "id": "soil-0090",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -23.698959,
+            "long": -59.581721
+          },
+          {
+            "lat": -23.698959,
+            "long": -59.476897
+          },
+          {
+            "lat": -23.803783,
+            "long": -59.476897
+          },
+          {
+            "lat": -23.803783,
+            "long": -59.581721
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583746+00:00"
+      }
+    },
+    {
+      "id": "soil-0091",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -11.169722,
+          "long": -37.577623
+        },
+        "radius": 4966
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583752+00:00"
+      }
+    },
+    {
+      "id": "soil-0092",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -30.784617,
+          "long": -46.917915
+        },
+        "radius": 2239
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583757+00:00"
+      }
+    },
+    {
+      "id": "soil-0093",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -2.268684,
+            "long": -42.827508
+          },
+          {
+            "lat": -2.268684,
+            "long": -42.728278
+          },
+          {
+            "lat": -2.367914,
+            "long": -42.728278
+          },
+          {
+            "lat": -2.367914,
+            "long": -42.827508
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583768+00:00"
+      }
+    },
+    {
+      "id": "soil-0094",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -7.882109,
+            "long": -71.286896
+          },
+          {
+            "lat": -7.965101,
+            "long": -71.231568
+          },
+          {
+            "lat": -7.965101,
+            "long": -71.342224
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583778+00:00"
+      }
+    },
+    {
+      "id": "soil-0095",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -16.833917,
+          "long": -59.792229
+        },
+        "radius": 4016
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583784+00:00"
+      }
+    },
+    {
+      "id": "soil-0096",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -13.338328,
+            "long": -48.545183
+          },
+          {
+            "lat": -13.338328,
+            "long": -48.438955
+          },
+          {
+            "lat": -13.444556,
+            "long": -48.438955
+          },
+          {
+            "lat": -13.444556,
+            "long": -48.545183
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583794+00:00"
+      }
+    },
+    {
+      "id": "soil-0097",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -1.497275,
+            "long": -50.764995
+          },
+          {
+            "lat": -1.546117,
+            "long": -50.732434
+          },
+          {
+            "lat": -1.546117,
+            "long": -50.797556
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583803+00:00"
+      }
+    },
+    {
+      "id": "soil-0098",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -24.181726,
+            "long": -55.773428
+          },
+          {
+            "lat": -24.260811,
+            "long": -55.720705
+          },
+          {
+            "lat": -24.260811,
+            "long": -55.826151
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583813+00:00"
+      }
+    },
+    {
+      "id": "soil-0099",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -0.520972,
+            "long": -66.861878
+          },
+          {
+            "lat": -0.558244,
+            "long": -66.83703
+          },
+          {
+            "lat": -0.558244,
+            "long": -66.886726
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583822+00:00"
+      }
+    },
+    {
+      "id": "soil-0100",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -6.379099,
+            "long": -63.170983
+          },
+          {
+            "lat": -6.379099,
+            "long": -63.149561
+          },
+          {
+            "lat": -6.400521,
+            "long": -63.149561
+          },
+          {
+            "lat": -6.400521,
+            "long": -63.170983
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583832+00:00"
+      }
+    },
+    {
+      "id": "soil-0101",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -17.864352,
+            "long": -52.253916
+          },
+          {
+            "lat": -17.864352,
+            "long": -52.20027
+          },
+          {
+            "lat": -17.917998,
+            "long": -52.20027
+          },
+          {
+            "lat": -17.917998,
+            "long": -52.253916
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583842+00:00"
+      }
+    },
+    {
+      "id": "soil-0102",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -30.119058,
+          "long": -65.303421
+        },
+        "radius": 2243
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583847+00:00"
+      }
+    },
+    {
+      "id": "soil-0103",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -12.971211,
+            "long": -57.372466
+          },
+          {
+            "lat": -12.971211,
+            "long": -57.248036
+          },
+          {
+            "lat": -13.095641,
+            "long": -57.248036
+          },
+          {
+            "lat": -13.095641,
+            "long": -57.372466
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583858+00:00"
+      }
+    },
+    {
+      "id": "soil-0104",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -23.160395,
+            "long": -64.134976
+          },
+          {
+            "lat": -23.188064,
+            "long": -64.11653
+          },
+          {
+            "lat": -23.188064,
+            "long": -64.153422
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583867+00:00"
+      }
+    },
+    {
+      "id": "soil-0105",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -12.817628,
+            "long": -44.135127
+          },
+          {
+            "lat": -12.817628,
+            "long": -44.089207
+          },
+          {
+            "lat": -12.863548,
+            "long": -44.089207
+          },
+          {
+            "lat": -12.863548,
+            "long": -44.135127
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583878+00:00"
+      }
+    },
+    {
+      "id": "soil-0106",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -10.692544,
+            "long": -44.241626
+          },
+          {
+            "lat": -10.692544,
+            "long": -44.138076
+          },
+          {
+            "lat": -10.796094,
+            "long": -44.138076
+          },
+          {
+            "lat": -10.796094,
+            "long": -44.241626
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583889+00:00"
+      }
+    },
+    {
+      "id": "soil-0107",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -19.668421,
+          "long": -62.141111
+        },
+        "radius": 4625
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583894+00:00"
+      }
+    },
+    {
+      "id": "soil-0108",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -12.157933,
+          "long": -46.651238
+        },
+        "radius": 1284
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583900+00:00"
+      }
+    },
+    {
+      "id": "soil-0109",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -22.62123,
+            "long": -55.258252
+          },
+          {
+            "lat": -22.62123,
+            "long": -55.190554
+          },
+          {
+            "lat": -22.688928,
+            "long": -55.190554
+          },
+          {
+            "lat": -22.688928,
+            "long": -55.258252
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583911+00:00"
+      }
+    },
+    {
+      "id": "soil-0110",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -1.671048,
+          "long": -58.282268
+        },
+        "radius": 856
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583917+00:00"
+      }
+    },
+    {
+      "id": "soil-0111",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -2.099236,
+          "long": -36.784275
+        },
+        "radius": 947
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583922+00:00"
+      }
+    },
+    {
+      "id": "soil-0112",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -10.065687,
+            "long": -42.992959
+          },
+          {
+            "lat": -10.104384,
+            "long": -42.967161
+          },
+          {
+            "lat": -10.104384,
+            "long": -43.018757
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583931+00:00"
+      }
+    },
+    {
+      "id": "soil-0113",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -22.107263,
+            "long": -50.919815
+          },
+          {
+            "lat": -22.16729,
+            "long": -50.879797
+          },
+          {
+            "lat": -22.16729,
+            "long": -50.959833
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583940+00:00"
+      }
+    },
+    {
+      "id": "soil-0114",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -29.82412,
+            "long": -44.144492
+          },
+          {
+            "lat": -29.82412,
+            "long": -44.03692
+          },
+          {
+            "lat": -29.931692,
+            "long": -44.03692
+          },
+          {
+            "lat": -29.931692,
+            "long": -44.144492
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583951+00:00"
+      }
+    },
+    {
+      "id": "soil-0115",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -26.967795,
+          "long": -71.047457
+        },
+        "radius": 271
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583957+00:00"
+      }
+    },
+    {
+      "id": "soil-0116",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -15.383848,
+            "long": -72.740685
+          },
+          {
+            "lat": -15.383848,
+            "long": -72.680351
+          },
+          {
+            "lat": -15.444182,
+            "long": -72.680351
+          },
+          {
+            "lat": -15.444182,
+            "long": -72.740685
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583967+00:00"
+      }
+    },
+    {
+      "id": "soil-0117",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -24.576416,
+            "long": -63.684846
+          },
+          {
+            "lat": -24.576416,
+            "long": -63.554072
+          },
+          {
+            "lat": -24.70719,
+            "long": -63.554072
+          },
+          {
+            "lat": -24.70719,
+            "long": -63.684846
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583977+00:00"
+      }
+    },
+    {
+      "id": "soil-0118",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -12.501176,
+          "long": -48.602719
+        },
+        "radius": 2426
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.583982+00:00"
+      }
+    },
+    {
+      "id": "soil-0119",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -2.821633,
+          "long": -50.664274
+        },
+        "radius": 4912
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.583987+00:00"
+      }
+    },
+    {
+      "id": "soil-0120",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -6.801798,
+            "long": -46.56044
+          },
+          {
+            "lat": -6.915779,
+            "long": -46.484453
+          },
+          {
+            "lat": -6.915779,
+            "long": -46.636427
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584002+00:00"
+      }
+    },
+    {
+      "id": "soil-0121",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -10.414609,
+          "long": -39.124623
+        },
+        "radius": 2890
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584008+00:00"
+      }
+    },
+    {
+      "id": "soil-0122",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -24.817369,
+          "long": -47.557504
+        },
+        "radius": 4962
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584014+00:00"
+      }
+    },
+    {
+      "id": "soil-0123",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -11.24258,
+            "long": -44.076127
+          },
+          {
+            "lat": -11.275975,
+            "long": -44.053864
+          },
+          {
+            "lat": -11.275975,
+            "long": -44.09839
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584023+00:00"
+      }
+    },
+    {
+      "id": "soil-0124",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": 5.150812,
+          "long": -56.903309
+        },
+        "radius": 4278
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584029+00:00"
+      }
+    },
+    {
+      "id": "soil-0125",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -20.674265,
+            "long": -47.720766
+          },
+          {
+            "lat": -20.779327,
+            "long": -47.650725
+          },
+          {
+            "lat": -20.779327,
+            "long": -47.790807
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584038+00:00"
+      }
+    },
+    {
+      "id": "soil-0126",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -22.436792,
+            "long": -36.938413
+          },
+          {
+            "lat": -22.537217,
+            "long": -36.871463
+          },
+          {
+            "lat": -22.537217,
+            "long": -37.005363
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584047+00:00"
+      }
+    },
+    {
+      "id": "soil-0127",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -21.477541,
+          "long": -61.317668
+        },
+        "radius": 3561
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584053+00:00"
+      }
+    },
+    {
+      "id": "soil-0128",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -15.677392,
+            "long": -71.911491
+          },
+          {
+            "lat": -15.677392,
+            "long": -71.818909
+          },
+          {
+            "lat": -15.769974,
+            "long": -71.818909
+          },
+          {
+            "lat": -15.769974,
+            "long": -71.911491
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584064+00:00"
+      }
+    },
+    {
+      "id": "soil-0129",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -4.046724,
+            "long": -66.010517
+          },
+          {
+            "lat": -4.119392,
+            "long": -65.962072
+          },
+          {
+            "lat": -4.119392,
+            "long": -66.058962
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584073+00:00"
+      }
+    },
+    {
+      "id": "soil-0130",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -28.959333,
+            "long": -35.842645
+          },
+          {
+            "lat": -29.038265,
+            "long": -35.790024
+          },
+          {
+            "lat": -29.038265,
+            "long": -35.895266
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584083+00:00"
+      }
+    },
+    {
+      "id": "soil-0131",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -33.190693,
+            "long": -58.022494
+          },
+          {
+            "lat": -33.190693,
+            "long": -57.971036
+          },
+          {
+            "lat": -33.242151,
+            "long": -57.971036
+          },
+          {
+            "lat": -33.242151,
+            "long": -58.022494
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584093+00:00"
+      }
+    },
+    {
+      "id": "soil-0132",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -1.219611,
+            "long": -54.513842
+          },
+          {
+            "lat": -1.219611,
+            "long": -54.393518
+          },
+          {
+            "lat": -1.339935,
+            "long": -54.393518
+          },
+          {
+            "lat": -1.339935,
+            "long": -54.513842
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584104+00:00"
+      }
+    },
+    {
+      "id": "soil-0133",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": 4.547735,
+            "long": -64.435748
+          },
+          {
+            "lat": 4.474852,
+            "long": -64.387159
+          },
+          {
+            "lat": 4.474852,
+            "long": -64.484337
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584113+00:00"
+      }
+    },
+    {
+      "id": "soil-0134",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -4.614778,
+            "long": -68.65376
+          },
+          {
+            "lat": -4.614778,
+            "long": -68.623986
+          },
+          {
+            "lat": -4.644552,
+            "long": -68.623986
+          },
+          {
+            "lat": -4.644552,
+            "long": -68.65376
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584123+00:00"
+      }
+    },
+    {
+      "id": "soil-0135",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -1.701261,
+            "long": -62.902712
+          },
+          {
+            "lat": -1.747609,
+            "long": -62.871813
+          },
+          {
+            "lat": -1.747609,
+            "long": -62.933611
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584132+00:00"
+      }
+    },
+    {
+      "id": "soil-0136",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -12.685952,
+            "long": -60.461141
+          },
+          {
+            "lat": -12.758903,
+            "long": -60.412507
+          },
+          {
+            "lat": -12.758903,
+            "long": -60.509775
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584141+00:00"
+      }
+    },
+    {
+      "id": "soil-0137",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": 0.208574,
+            "long": -35.543634
+          },
+          {
+            "lat": 0.1685,
+            "long": -35.516918
+          },
+          {
+            "lat": 0.1685,
+            "long": -35.57035
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584156+00:00"
+      }
+    },
+    {
+      "id": "soil-0138",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -21.33476,
+          "long": -55.449331
+        },
+        "radius": 3373
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584166+00:00"
+      }
+    },
+    {
+      "id": "soil-0139",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -28.823871,
+          "long": -36.148139
+        },
+        "radius": 2969
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584174+00:00"
+      }
+    },
+    {
+      "id": "soil-0140",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": 1.795525,
+            "long": -73.408465
+          },
+          {
+            "lat": 1.795525,
+            "long": -73.368283
+          },
+          {
+            "lat": 1.755343,
+            "long": -73.368283
+          },
+          {
+            "lat": 1.755343,
+            "long": -73.408465
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584184+00:00"
+      }
+    },
+    {
+      "id": "soil-0141",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -20.483852,
+            "long": -46.83598
+          },
+          {
+            "lat": -20.567085,
+            "long": -46.780491
+          },
+          {
+            "lat": -20.567085,
+            "long": -46.891469
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584194+00:00"
+      }
+    },
+    {
+      "id": "soil-0142",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -5.634579,
+            "long": -44.292516
+          },
+          {
+            "lat": -5.634579,
+            "long": -44.150382
+          },
+          {
+            "lat": -5.776713,
+            "long": -44.150382
+          },
+          {
+            "lat": -5.776713,
+            "long": -44.292516
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584203+00:00"
+      }
+    },
+    {
+      "id": "soil-0143",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -7.018805,
+            "long": -62.750667
+          },
+          {
+            "lat": -7.018805,
+            "long": -62.698819
+          },
+          {
+            "lat": -7.070653,
+            "long": -62.698819
+          },
+          {
+            "lat": -7.070653,
+            "long": -62.750667
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584215+00:00"
+      }
+    },
+    {
+      "id": "soil-0144",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -6.262534,
+            "long": -70.071762
+          },
+          {
+            "lat": -6.262534,
+            "long": -70.02847
+          },
+          {
+            "lat": -6.305826,
+            "long": -70.02847
+          },
+          {
+            "lat": -6.305826,
+            "long": -70.071762
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584225+00:00"
+      }
+    },
+    {
+      "id": "soil-0145",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -2.648243,
+            "long": -62.489983
+          },
+          {
+            "lat": -2.702601,
+            "long": -62.453744
+          },
+          {
+            "lat": -2.702601,
+            "long": -62.526222
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584234+00:00"
+      }
+    },
+    {
+      "id": "soil-0146",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -11.645588,
+            "long": -42.923237
+          },
+          {
+            "lat": -11.678436,
+            "long": -42.901338
+          },
+          {
+            "lat": -11.678436,
+            "long": -42.945136
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584251+00:00"
+      }
+    },
+    {
+      "id": "soil-0147",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -24.332804,
+            "long": -38.227121
+          },
+          {
+            "lat": -24.332804,
+            "long": -38.187085
+          },
+          {
+            "lat": -24.37284,
+            "long": -38.187085
+          },
+          {
+            "lat": -24.37284,
+            "long": -38.227121
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584267+00:00"
+      }
+    },
+    {
+      "id": "soil-0148",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -7.687307,
+            "long": -38.752786
+          },
+          {
+            "lat": -7.751159,
+            "long": -38.710218
+          },
+          {
+            "lat": -7.751159,
+            "long": -38.795354
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584283+00:00"
+      }
+    },
+    {
+      "id": "soil-0149",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": 3.164035,
+            "long": -35.274054
+          },
+          {
+            "lat": 3.117624,
+            "long": -35.243113
+          },
+          {
+            "lat": 3.117624,
+            "long": -35.304995
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584293+00:00"
+      }
+    },
+    {
+      "id": "soil-0150",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -25.932728,
+            "long": -58.910025
+          },
+          {
+            "lat": -25.998465,
+            "long": -58.8662
+          },
+          {
+            "lat": -25.998465,
+            "long": -58.95385
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584302+00:00"
+      }
+    },
+    {
+      "id": "soil-0151",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -11.290172,
+            "long": -35.076472
+          },
+          {
+            "lat": -11.336171,
+            "long": -35.045806
+          },
+          {
+            "lat": -11.336171,
+            "long": -35.107138
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584311+00:00"
+      }
+    },
+    {
+      "id": "soil-0152",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": 0.083082,
+            "long": -43.558337
+          },
+          {
+            "lat": 0.083082,
+            "long": -43.402033
+          },
+          {
+            "lat": -0.073222,
+            "long": -43.402033
+          },
+          {
+            "lat": -0.073222,
+            "long": -43.558337
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584420+00:00"
+      }
+    },
+    {
+      "id": "soil-0153",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -10.062324,
+          "long": -60.179019
+        },
+        "radius": 1807
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584428+00:00"
+      }
+    },
+    {
+      "id": "soil-0154",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -3.783715,
+            "long": -47.320055
+          },
+          {
+            "lat": -3.783715,
+            "long": -47.280905
+          },
+          {
+            "lat": -3.822865,
+            "long": -47.280905
+          },
+          {
+            "lat": -3.822865,
+            "long": -47.320055
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584439+00:00"
+      }
+    },
+    {
+      "id": "soil-0155",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -32.428917,
+            "long": -59.68744
+          },
+          {
+            "lat": -32.457715,
+            "long": -59.668241
+          },
+          {
+            "lat": -32.457715,
+            "long": -59.706639
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584448+00:00"
+      }
+    },
+    {
+      "id": "soil-0156",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -26.848765,
+            "long": -68.809336
+          },
+          {
+            "lat": -26.920403,
+            "long": -68.761577
+          },
+          {
+            "lat": -26.920403,
+            "long": -68.857095
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584458+00:00"
+      }
+    },
+    {
+      "id": "soil-0157",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": 1.993907,
+            "long": -36.977838
+          },
+          {
+            "lat": 1.877332,
+            "long": -36.900121
+          },
+          {
+            "lat": 1.877332,
+            "long": -37.055555
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584467+00:00"
+      }
+    },
+    {
+      "id": "soil-0158",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": 3.899751,
+            "long": -68.472325
+          },
+          {
+            "lat": 3.783268,
+            "long": -68.39467
+          },
+          {
+            "lat": 3.783268,
+            "long": -68.54998
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584476+00:00"
+      }
+    },
+    {
+      "id": "soil-0159",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -33.165059,
+            "long": -52.956366
+          },
+          {
+            "lat": -33.227812,
+            "long": -52.914531
+          },
+          {
+            "lat": -33.227812,
+            "long": -52.998201
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584486+00:00"
+      }
+    },
+    {
+      "id": "soil-0160",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -29.510583,
+            "long": -64.824181
+          },
+          {
+            "lat": -29.528211,
+            "long": -64.812429
+          },
+          {
+            "lat": -29.528211,
+            "long": -64.835933
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584496+00:00"
+      }
+    },
+    {
+      "id": "soil-0161",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -8.478604,
+          "long": -49.082166
+        },
+        "radius": 4053
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584501+00:00"
+      }
+    },
+    {
+      "id": "soil-0162",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -31.980567,
+          "long": -72.531285
+        },
+        "radius": 4285
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584507+00:00"
+      }
+    },
+    {
+      "id": "soil-0163",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -28.399455,
+            "long": -56.264099
+          },
+          {
+            "lat": -28.399455,
+            "long": -56.150231
+          },
+          {
+            "lat": -28.513323,
+            "long": -56.150231
+          },
+          {
+            "lat": -28.513323,
+            "long": -56.264099
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584517+00:00"
+      }
+    },
+    {
+      "id": "soil-0164",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -5.342256,
+            "long": -39.337625
+          },
+          {
+            "lat": -5.342256,
+            "long": -39.225935
+          },
+          {
+            "lat": -5.453946,
+            "long": -39.225935
+          },
+          {
+            "lat": -5.453946,
+            "long": -39.337625
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584528+00:00"
+      }
+    },
+    {
+      "id": "soil-0165",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -6.815249,
+          "long": -65.473028
+        },
+        "radius": 3892
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584534+00:00"
+      }
+    },
+    {
+      "id": "soil-0166",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -19.361452,
+            "long": -38.698646
+          },
+          {
+            "lat": -19.361452,
+            "long": -38.58837
+          },
+          {
+            "lat": -19.471728,
+            "long": -38.58837
+          },
+          {
+            "lat": -19.471728,
+            "long": -38.698646
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584544+00:00"
+      }
+    },
+    {
+      "id": "soil-0167",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": 4.029432,
+          "long": -36.788777
+        },
+        "radius": 3975
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584549+00:00"
+      }
+    },
+    {
+      "id": "soil-0168",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -10.384289,
+            "long": -73.217864
+          },
+          {
+            "lat": -10.384289,
+            "long": -73.087712
+          },
+          {
+            "lat": -10.514441,
+            "long": -73.087712
+          },
+          {
+            "lat": -10.514441,
+            "long": -73.217864
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584561+00:00"
+      }
+    },
+    {
+      "id": "soil-0169",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -31.072832,
+          "long": -43.995831
+        },
+        "radius": 1947
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584566+00:00"
+      }
+    },
+    {
+      "id": "soil-0170",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -3.482419,
+            "long": -43.075165
+          },
+          {
+            "lat": -3.559997,
+            "long": -43.023446
+          },
+          {
+            "lat": -3.559997,
+            "long": -43.126884
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584576+00:00"
+      }
+    },
+    {
+      "id": "soil-0171",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -23.913199,
+            "long": -67.205987
+          },
+          {
+            "lat": -23.913199,
+            "long": -67.093439
+          },
+          {
+            "lat": -24.025747,
+            "long": -67.093439
+          },
+          {
+            "lat": -24.025747,
+            "long": -67.205987
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584590+00:00"
+      }
+    },
+    {
+      "id": "soil-0172",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -2.892134,
+            "long": -64.663081
+          },
+          {
+            "lat": -2.94113,
+            "long": -64.630417
+          },
+          {
+            "lat": -2.94113,
+            "long": -64.695745
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584599+00:00"
+      }
+    },
+    {
+      "id": "soil-0173",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -4.808161,
+          "long": -53.367447
+        },
+        "radius": 770
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584607+00:00"
+      }
+    },
+    {
+      "id": "soil-0174",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -10.559644,
+            "long": -56.296896
+          },
+          {
+            "lat": -10.559644,
+            "long": -56.24588
+          },
+          {
+            "lat": -10.61066,
+            "long": -56.24588
+          },
+          {
+            "lat": -10.61066,
+            "long": -56.296896
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584618+00:00"
+      }
+    },
+    {
+      "id": "soil-0175",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -13.325492,
+            "long": -56.112215
+          },
+          {
+            "lat": -13.325492,
+            "long": -55.957251
+          },
+          {
+            "lat": -13.480456,
+            "long": -55.957251
+          },
+          {
+            "lat": -13.480456,
+            "long": -56.112215
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584630+00:00"
+      }
+    },
+    {
+      "id": "soil-0176",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -6.904797,
+            "long": -54.771461
+          },
+          {
+            "lat": -7.015316,
+            "long": -54.697782
+          },
+          {
+            "lat": -7.015316,
+            "long": -54.84514
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584639+00:00"
+      }
+    },
+    {
+      "id": "soil-0177",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -27.908312,
+            "long": -69.096992
+          },
+          {
+            "lat": -27.908312,
+            "long": -68.989588
+          },
+          {
+            "lat": -28.015716,
+            "long": -68.989588
+          },
+          {
+            "lat": -28.015716,
+            "long": -69.096992
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584649+00:00"
+      }
+    },
+    {
+      "id": "soil-0178",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -12.995292,
+            "long": -56.256736
+          },
+          {
+            "lat": -12.995292,
+            "long": -56.151976
+          },
+          {
+            "lat": -13.100052,
+            "long": -56.151976
+          },
+          {
+            "lat": -13.100052,
+            "long": -56.256736
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584660+00:00"
+      }
+    },
+    {
+      "id": "soil-0179",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": 0.56868,
+            "long": -52.448243
+          },
+          {
+            "lat": 0.56868,
+            "long": -52.307075
+          },
+          {
+            "lat": 0.427512,
+            "long": -52.307075
+          },
+          {
+            "lat": 0.427512,
+            "long": -52.448243
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584670+00:00"
+      }
+    },
+    {
+      "id": "soil-0180",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -20.485769,
+            "long": -56.212843
+          },
+          {
+            "lat": -20.544448,
+            "long": -56.173724
+          },
+          {
+            "lat": -20.544448,
+            "long": -56.251962
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584680+00:00"
+      }
+    },
+    {
+      "id": "soil-0181",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -7.776806,
+            "long": -59.3174
+          },
+          {
+            "lat": -7.807833,
+            "long": -59.296715
+          },
+          {
+            "lat": -7.807833,
+            "long": -59.338085
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584691+00:00"
+      }
+    },
+    {
+      "id": "soil-0182",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -30.112161,
+          "long": -70.204674
+        },
+        "radius": 3302
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584700+00:00"
+      }
+    },
+    {
+      "id": "soil-0183",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -11.794357,
+            "long": -47.764237
+          },
+          {
+            "lat": -11.794357,
+            "long": -47.686723
+          },
+          {
+            "lat": -11.871871,
+            "long": -47.686723
+          },
+          {
+            "lat": -11.871871,
+            "long": -47.764237
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584719+00:00"
+      }
+    },
+    {
+      "id": "soil-0184",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -21.512725,
+            "long": -69.974377
+          },
+          {
+            "lat": -21.512725,
+            "long": -69.883339
+          },
+          {
+            "lat": -21.603763,
+            "long": -69.883339
+          },
+          {
+            "lat": -21.603763,
+            "long": -69.974377
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584737+00:00"
+      }
+    },
+    {
+      "id": "soil-0185",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -20.088552,
+          "long": -52.184393
+        },
+        "radius": 1191
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584743+00:00"
+      }
+    },
+    {
+      "id": "soil-0186",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": 4.329758,
+            "long": -41.960617
+          },
+          {
+            "lat": 4.329758,
+            "long": -41.854717
+          },
+          {
+            "lat": 4.223858,
+            "long": -41.854717
+          },
+          {
+            "lat": 4.223858,
+            "long": -41.960617
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584754+00:00"
+      }
+    },
+    {
+      "id": "soil-0187",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -1.361811,
+            "long": -63.528678
+          },
+          {
+            "lat": -1.361811,
+            "long": -63.48342
+          },
+          {
+            "lat": -1.407069,
+            "long": -63.48342
+          },
+          {
+            "lat": -1.407069,
+            "long": -63.528678
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584764+00:00"
+      }
+    },
+    {
+      "id": "soil-0188",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -26.671555,
+          "long": -68.374542
+        },
+        "radius": 3533
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584770+00:00"
+      }
+    },
+    {
+      "id": "soil-0189",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": 4.217173,
+            "long": -70.440233
+          },
+          {
+            "lat": 4.217173,
+            "long": -70.345965
+          },
+          {
+            "lat": 4.122905,
+            "long": -70.345965
+          },
+          {
+            "lat": 4.122905,
+            "long": -70.440233
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584780+00:00"
+      }
+    },
+    {
+      "id": "soil-0190",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -27.575183,
+            "long": -61.773815
+          },
+          {
+            "lat": -27.624243,
+            "long": -61.741108
+          },
+          {
+            "lat": -27.624243,
+            "long": -61.806522
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584790+00:00"
+      }
+    },
+    {
+      "id": "soil-0191",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -27.607866,
+          "long": -49.770743
+        },
+        "radius": 918
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584796+00:00"
+      }
+    },
+    {
+      "id": "soil-0192",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -14.770358,
+            "long": -56.661868
+          },
+          {
+            "lat": -14.814041,
+            "long": -56.632746
+          },
+          {
+            "lat": -14.814041,
+            "long": -56.69099
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584805+00:00"
+      }
+    },
+    {
+      "id": "soil-0193",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -29.371562,
+            "long": -47.403859
+          },
+          {
+            "lat": -29.448841,
+            "long": -47.35234
+          },
+          {
+            "lat": -29.448841,
+            "long": -47.455378
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584814+00:00"
+      }
+    },
+    {
+      "id": "soil-0194",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -18.326822,
+          "long": -50.496462
+        },
+        "radius": 312
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584820+00:00"
+      }
+    },
+    {
+      "id": "soil-0195",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -3.932442,
+          "long": -62.643672
+        },
+        "radius": 1232
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584826+00:00"
+      }
+    },
+    {
+      "id": "soil-0196",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -26.835132,
+            "long": -59.085868
+          },
+          {
+            "lat": -26.924017,
+            "long": -59.026611
+          },
+          {
+            "lat": -26.924017,
+            "long": -59.145125
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584835+00:00"
+      }
+    },
+    {
+      "id": "soil-0197",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -0.112643,
+            "long": -72.331751
+          },
+          {
+            "lat": -0.129611,
+            "long": -72.320439
+          },
+          {
+            "lat": -0.129611,
+            "long": -72.343063
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584844+00:00"
+      }
+    },
+    {
+      "id": "soil-0198",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -11.336705,
+            "long": -46.177641
+          },
+          {
+            "lat": -11.395563,
+            "long": -46.138402
+          },
+          {
+            "lat": -11.395563,
+            "long": -46.21688
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584853+00:00"
+      }
+    },
+    {
+      "id": "soil-0199",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -27.001301,
+            "long": -36.843519
+          },
+          {
+            "lat": -27.064611,
+            "long": -36.801312
+          },
+          {
+            "lat": -27.064611,
+            "long": -36.885726
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584863+00:00"
+      }
+    },
+    {
+      "id": "soil-0200",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -24.255791,
+          "long": -50.906245
+        },
+        "radius": 4542
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584868+00:00"
+      }
+    },
+    {
+      "id": "soil-0201",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -20.480423,
+            "long": -60.955479
+          },
+          {
+            "lat": -20.480423,
+            "long": -60.911941
+          },
+          {
+            "lat": -20.523961,
+            "long": -60.911941
+          },
+          {
+            "lat": -20.523961,
+            "long": -60.955479
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584879+00:00"
+      }
+    },
+    {
+      "id": "soil-0202",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -26.1493,
+            "long": -43.59643
+          },
+          {
+            "lat": -26.1493,
+            "long": -43.527276
+          },
+          {
+            "lat": -26.218454,
+            "long": -43.527276
+          },
+          {
+            "lat": -26.218454,
+            "long": -43.59643
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584890+00:00"
+      }
+    },
+    {
+      "id": "soil-0203",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -23.76212,
+          "long": -67.188838
+        },
+        "radius": 1502
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584896+00:00"
+      }
+    },
+    {
+      "id": "soil-0204",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -15.595988,
+            "long": -51.891569
+          },
+          {
+            "lat": -15.671832,
+            "long": -51.841006
+          },
+          {
+            "lat": -15.671832,
+            "long": -51.942132
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584906+00:00"
+      }
+    },
+    {
+      "id": "soil-0205",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -27.818687,
+            "long": -71.313179
+          },
+          {
+            "lat": -27.880119,
+            "long": -71.272224
+          },
+          {
+            "lat": -27.880119,
+            "long": -71.354134
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584915+00:00"
+      }
+    },
+    {
+      "id": "soil-0206",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -20.017214,
+          "long": -71.081726
+        },
+        "radius": 4032
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584921+00:00"
+      }
+    },
+    {
+      "id": "soil-0207",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -1.226699,
+            "long": -70.982145
+          },
+          {
+            "lat": -1.332446,
+            "long": -70.911647
+          },
+          {
+            "lat": -1.332446,
+            "long": -71.052643
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584931+00:00"
+      }
+    },
+    {
+      "id": "soil-0208",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -12.047864,
+            "long": -43.023453
+          },
+          {
+            "lat": -12.047864,
+            "long": -42.878031
+          },
+          {
+            "lat": -12.193286,
+            "long": -42.878031
+          },
+          {
+            "lat": -12.193286,
+            "long": -43.023453
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584941+00:00"
+      }
+    },
+    {
+      "id": "soil-0209",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -15.176624,
+            "long": -68.090577
+          },
+          {
+            "lat": -15.176624,
+            "long": -68.061915
+          },
+          {
+            "lat": -15.205286,
+            "long": -68.061915
+          },
+          {
+            "lat": -15.205286,
+            "long": -68.090577
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584952+00:00"
+      }
+    },
+    {
+      "id": "soil-0210",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -14.062498,
+          "long": -67.225691
+        },
+        "radius": 2279
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584958+00:00"
+      }
+    },
+    {
+      "id": "soil-0211",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -9.881137,
+            "long": -59.799456
+          },
+          {
+            "lat": -9.881137,
+            "long": -59.650944
+          },
+          {
+            "lat": -10.029649,
+            "long": -59.650944
+          },
+          {
+            "lat": -10.029649,
+            "long": -59.799456
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584968+00:00"
+      }
+    },
+    {
+      "id": "soil-0212",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -10.365183,
+            "long": -43.107615
+          },
+          {
+            "lat": -10.365183,
+            "long": -42.996993
+          },
+          {
+            "lat": -10.475805,
+            "long": -42.996993
+          },
+          {
+            "lat": -10.475805,
+            "long": -43.107615
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584978+00:00"
+      }
+    },
+    {
+      "id": "soil-0213",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -7.218977,
+            "long": -62.9121
+          },
+          {
+            "lat": -7.218977,
+            "long": -62.790778
+          },
+          {
+            "lat": -7.340299,
+            "long": -62.790778
+          },
+          {
+            "lat": -7.340299,
+            "long": -62.9121
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.584988+00:00"
+      }
+    },
+    {
+      "id": "soil-0214",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -11.011504,
+          "long": -68.446007
+        },
+        "radius": 3115
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.584994+00:00"
+      }
+    },
+    {
+      "id": "soil-0215",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -6.042172,
+            "long": -70.71814
+          },
+          {
+            "lat": -6.042172,
+            "long": -70.61989
+          },
+          {
+            "lat": -6.140422,
+            "long": -70.61989
+          },
+          {
+            "lat": -6.140422,
+            "long": -70.71814
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.585004+00:00"
+      }
+    },
+    {
+      "id": "soil-0216",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -1.346042,
+            "long": -45.088012
+          },
+          {
+            "lat": -1.346042,
+            "long": -44.972054
+          },
+          {
+            "lat": -1.462,
+            "long": -44.972054
+          },
+          {
+            "lat": -1.462,
+            "long": -45.088012
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.585014+00:00"
+      }
+    },
+    {
+      "id": "soil-0217",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -17.193302,
+            "long": -59.841721
+          },
+          {
+            "lat": -17.193302,
+            "long": -59.770957
+          },
+          {
+            "lat": -17.264066,
+            "long": -59.770957
+          },
+          {
+            "lat": -17.264066,
+            "long": -59.841721
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.585024+00:00"
+      }
+    },
+    {
+      "id": "soil-0218",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -26.23711,
+            "long": -34.790916
+          },
+          {
+            "lat": -26.268379,
+            "long": -34.79
+          },
+          {
+            "lat": -26.268379,
+            "long": -34.811762
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.585033+00:00"
+      }
+    },
+    {
+      "id": "soil-0219",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -1.150982,
+            "long": -39.362301
+          },
+          {
+            "lat": -1.150982,
+            "long": -39.337017
+          },
+          {
+            "lat": -1.176266,
+            "long": -39.337017
+          },
+          {
+            "lat": -1.176266,
+            "long": -39.362301
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.585044+00:00"
+      }
+    },
+    {
+      "id": "soil-0220",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -27.672558,
+            "long": -66.900838
+          },
+          {
+            "lat": -27.760307,
+            "long": -66.842339
+          },
+          {
+            "lat": -27.760307,
+            "long": -66.959337
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.585053+00:00"
+      }
+    },
+    {
+      "id": "soil-0221",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -31.98475,
+            "long": -59.709463
+          },
+          {
+            "lat": -32.075306,
+            "long": -59.649092
+          },
+          {
+            "lat": -32.075306,
+            "long": -59.769834
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.585062+00:00"
+      }
+    },
+    {
+      "id": "soil-0222",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -24.541613,
+            "long": -64.614595
+          },
+          {
+            "lat": -24.658001,
+            "long": -64.537003
+          },
+          {
+            "lat": -24.658001,
+            "long": -64.692187
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.585076+00:00"
+      }
+    },
+    {
+      "id": "soil-0223",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": 3.249337,
+            "long": -35.442278
+          },
+          {
+            "lat": 3.249337,
+            "long": -35.357642
+          },
+          {
+            "lat": 3.164701,
+            "long": -35.357642
+          },
+          {
+            "lat": 3.164701,
+            "long": -35.442278
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.585086+00:00"
+      }
+    },
+    {
+      "id": "soil-0224",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -17.389876,
+            "long": -67.661299
+          },
+          {
+            "lat": -17.389876,
+            "long": -67.613341
+          },
+          {
+            "lat": -17.437834,
+            "long": -67.613341
+          },
+          {
+            "lat": -17.437834,
+            "long": -67.661299
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.585096+00:00"
+      }
+    },
+    {
+      "id": "soil-0225",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -8.731194,
+          "long": -39.724616
+        },
+        "radius": 4792
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.585102+00:00"
+      }
+    },
+    {
+      "id": "soil-0226",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -3.973181,
+          "long": -63.296581
+        },
+        "radius": 4455
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.585107+00:00"
+      }
+    },
+    {
+      "id": "soil-0227",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -1.882239,
+          "long": -39.312513
+        },
+        "radius": 468
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.585113+00:00"
+      }
+    },
+    {
+      "id": "soil-0228",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -19.142311,
+            "long": -58.868
+          },
+          {
+            "lat": -19.142311,
+            "long": -58.836576
+          },
+          {
+            "lat": -19.173735,
+            "long": -58.836576
+          },
+          {
+            "lat": -19.173735,
+            "long": -58.868
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.585123+00:00"
+      }
+    },
+    {
+      "id": "soil-0229",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -1.005341,
+          "long": -48.511541
+        },
+        "radius": 1446
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.585128+00:00"
+      }
+    },
+    {
+      "id": "soil-0230",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -6.529883,
+            "long": -68.549326
+          },
+          {
+            "lat": -6.618965,
+            "long": -68.489938
+          },
+          {
+            "lat": -6.618965,
+            "long": -68.608714
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.585143+00:00"
+      }
+    },
+    {
+      "id": "soil-0231",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -23.763848,
+          "long": -41.259447
+        },
+        "radius": 4745
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.585149+00:00"
+      }
+    },
+    {
+      "id": "soil-0232",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -24.450587,
+            "long": -69.213545
+          },
+          {
+            "lat": -24.490623,
+            "long": -69.186854
+          },
+          {
+            "lat": -24.490623,
+            "long": -69.240236
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.585158+00:00"
+      }
+    },
+    {
+      "id": "soil-0233",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -1.102445,
+          "long": -54.396694
+        },
+        "radius": 4641
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.585163+00:00"
+      }
+    },
+    {
+      "id": "soil-0234",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -22.384567,
+          "long": -73.928678
+        },
+        "radius": 3140
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.585169+00:00"
+      }
+    },
+    {
+      "id": "soil-0235",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -7.641012,
+            "long": -53.504647
+          },
+          {
+            "lat": -7.641012,
+            "long": -53.434163
+          },
+          {
+            "lat": -7.711496,
+            "long": -53.434163
+          },
+          {
+            "lat": -7.711496,
+            "long": -53.504647
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.585179+00:00"
+      }
+    },
+    {
+      "id": "soil-0236",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -32.015156,
+            "long": -58.824252
+          },
+          {
+            "lat": -32.069353,
+            "long": -58.788121
+          },
+          {
+            "lat": -32.069353,
+            "long": -58.860383
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.585189+00:00"
+      }
+    },
+    {
+      "id": "soil-0237",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -24.32401,
+            "long": -48.231508
+          },
+          {
+            "lat": -24.349894,
+            "long": -48.214252
+          },
+          {
+            "lat": -24.349894,
+            "long": -48.248764
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.585198+00:00"
+      }
+    },
+    {
+      "id": "soil-0238",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -20.003291,
+          "long": -60.718947
+        },
+        "radius": 1684
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.585204+00:00"
+      }
+    },
+    {
+      "id": "soil-0239",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -2.08536,
+          "long": -71.516459
+        },
+        "radius": 3999
+      },
+      "metadata": {
+        "region": "Norte",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.585210+00:00"
+      }
+    },
+    {
+      "id": "soil-0240",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -2.880918,
+          "long": -39.267017
+        },
+        "radius": 2835
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.585215+00:00"
+      }
+    },
+    {
+      "id": "soil-0241",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -23.84232,
+            "long": -44.460996
+          },
+          {
+            "lat": -23.877386,
+            "long": -44.437619
+          },
+          {
+            "lat": -23.877386,
+            "long": -44.484373
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.585225+00:00"
+      }
+    },
+    {
+      "id": "soil-0242",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": -23.048501,
+            "long": -42.655777
+          },
+          {
+            "lat": -23.109381,
+            "long": -42.61519
+          },
+          {
+            "lat": -23.109381,
+            "long": -42.696364
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.585234+00:00"
+      }
+    },
+    {
+      "id": "soil-0243",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "triangle",
+        "vertices": [
+          {
+            "lat": 4.289521,
+            "long": -54.538834
+          },
+          {
+            "lat": 4.222281,
+            "long": -54.494007
+          },
+          {
+            "lat": 4.222281,
+            "long": -54.583661
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.585243+00:00"
+      }
+    },
+    {
+      "id": "soil-0244",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -17.106366,
+            "long": -57.189857
+          },
+          {
+            "lat": -17.106366,
+            "long": -57.030543
+          },
+          {
+            "lat": -17.26568,
+            "long": -57.030543
+          },
+          {
+            "lat": -17.26568,
+            "long": -57.189857
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Nordeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.585253+00:00"
+      }
+    },
+    {
+      "id": "soil-0245",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -30.625711,
+          "long": -48.081967
+        },
+        "radius": 2760
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.585259+00:00"
+      }
+    },
+    {
+      "id": "soil-0246",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -16.367818,
+            "long": -56.523394
+          },
+          {
+            "lat": -16.367818,
+            "long": -56.40164
+          },
+          {
+            "lat": -16.489572,
+            "long": -56.40164
+          },
+          {
+            "lat": -16.489572,
+            "long": -56.523394
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.585269+00:00"
+      }
+    },
+    {
+      "id": "soil-0247",
+      "key": "B",
+      "name": "Solo tipo B",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": 4.505917,
+            "long": -36.847401
+          },
+          {
+            "lat": 4.505917,
+            "long": -36.816895
+          },
+          {
+            "lat": 4.475411,
+            "long": -36.816895
+          },
+          {
+            "lat": 4.475411,
+            "long": -36.847401
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sudeste",
+        "source": "mock-api-test",
+        "active": true,
+        "createdAt": "2026-05-07T00:44:23.585279+00:00"
+      }
+    },
+    {
+      "id": "soil-0248",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "square",
+        "vertices": [
+          {
+            "lat": -7.219403,
+            "long": -36.660651
+          },
+          {
+            "lat": -7.219403,
+            "long": -36.620661
+          },
+          {
+            "lat": -7.259393,
+            "long": -36.620661
+          },
+          {
+            "lat": -7.259393,
+            "long": -36.660651
+          }
+        ]
+      },
+      "metadata": {
+        "region": "Sul",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.585292+00:00"
+      }
+    },
+    {
+      "id": "soil-0249",
+      "key": "A",
+      "name": "Solo tipo A",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -31.126554,
+          "long": -43.472197
+        },
+        "radius": 3250
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.585298+00:00"
+      }
+    },
+    {
+      "id": "soil-0250",
+      "key": "C",
+      "name": "Solo tipo C",
+      "area": {
+        "shape": "circle",
+        "center": {
+          "lat": -10.1392,
+          "long": -47.370767
+        },
+        "radius": 3288
+      },
+      "metadata": {
+        "region": "Centro-Oeste",
+        "source": "mock-api-test",
+        "active": false,
+        "createdAt": "2026-05-07T00:44:23.585303+00:00"
+      }
+    }
+  ]
+}
