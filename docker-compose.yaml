@@ -1,0 +1,26 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.api.dev
+    container_name: fakeqgis-api
+    ports:
+      - "${API_PORT:-3000}:3000"
+    environment:
+      PORT: 3000
+      SOILS_MOCK_BASE_URL: ${SOILS_MOCK_BASE_URL:-http://mock-soils:3001}
+    depends_on:
+      - mock-soils
+    restart: unless-stopped
+
+  mock-soils:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.db.dev
+    container_name: fakeqgis-mock-soils
+    ports:
+      - "${MOCK_PORT:-3001}:3001"
+    environment:
+      MOCK_DATA_FILE: ${MOCK_DATA_FILE:-db.legacy.json}
+      MOCK_RESOURCE_NAME: ${MOCK_RESOURCE_NAME:-soils}
+    restart: unless-stopped
