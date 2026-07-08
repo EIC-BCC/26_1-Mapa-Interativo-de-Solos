@@ -1,0 +1,25 @@
+FROM node:18-alpine AS builder
+
+WORKDIR /usr/build/api
+
+COPY api/package.json api/yarn.lock ./
+RUN yarn install --frozen-lockfile
+
+COPY api/tsconfig.json ./
+COPY api/src ./src
+
+RUN yarn build
+
+
+FROM node:18-alpine
+
+WORKDIR /usr/runner/api
+
+COPY api/package.json api/yarn.lock ./
+RUN yarn install --frozen-lockfile --production
+
+COPY --from=builder /usr/build/api/dist ./dist
+
+EXPOSE 3000
+
+CMD ["yarn", "start"]
